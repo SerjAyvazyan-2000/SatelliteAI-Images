@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-arrowDown{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+
+.icon-star{
+    mask-image: url(star.svg);
+    -webkit-mask-image: url(star.svg);
+}
+.icon-short{
+    mask-image: url(Short.svg);
+    -webkit-mask-image: url(Short.svg);
+}
+.icon-high{
+    mask-image: url(high.svg);
+    -webkit-mask-image: url(high.svg);
+}
+.icon-original{
+    mask-image: url(original.svg);
+    -webkit-mask-image: url(original.svg);
+}
+.icon-cursor{
+    mask-image: url(cursor.svg);
+    -webkit-mask-image: url(cursor.svg);
+}
+.icon-voice{
+    mask-image: url(icon-voice.svg);
+    -webkit-mask-image: url(icon-voice.svg);
+}
+.icon-hover{
+    mask-image: url(icon-hover.svg);
+    -webkit-mask-image: url(icon-hover.svg);
+}
+.icon-tools{
+    mask-image: url(tools.svg);
+    -webkit-mask-image: url(tools.svg);
+}
+.icon-tools2{
+    mask-image: url(tools2.svg);
+    -webkit-mask-image: url(tools2.svg);
+}
+.icon-arrow{
+    mask-image: url(arrow.svg);
+    -webkit-mask-image: url(arrow.svg);
+}
