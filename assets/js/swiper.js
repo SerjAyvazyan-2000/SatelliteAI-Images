@@ -18,6 +18,20 @@ let possibilitiesSwiper = new Swiper(".possibilities-slider", {
 
 });
 
+document.querySelectorAll('.possibilities-slider-picture').forEach(twenty => {
+    twenty.addEventListener('pointerdown', () => {
+        possibilitiesSwiper.allowTouchMove = false;
+    });
+
+    twenty.addEventListener('pointerup', () => {
+        possibilitiesSwiper.allowTouchMove = true;
+    });
+
+    twenty.addEventListener('pointerleave', () => {
+        possibilitiesSwiper.allowTouchMove = true;
+    });
+});
+
 
 let swiper = new Swiper(".tools-swiper-items", {
     slidesPerView: 4.3,

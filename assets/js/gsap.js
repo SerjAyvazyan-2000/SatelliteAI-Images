@@ -82,14 +82,47 @@ document.addEventListener("DOMContentLoaded", () => {
             { rotation: 12 },
             {
                 scrollTrigger: {
-                    trigger: '.peculiarities-item--one', // Триггер для первой карточки
-                    start: 'top 80%', // Начать выравнивание чуть раньше
-                    end: 'top center', // Завершить выравнивание
+                    trigger: '.peculiarities-item--one',
+                    start: 'top 80%',
+                    end: 'top center',
                     scrub: true,
                 },
                 rotation: 0,
             }
         );
+        gsap.fromTo(
+            '.peculiarities-item--two',
+            { opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: '.peculiarities-item--two',
+                    start: 'top 50%',
+                    end: 'top center',
+                    scrub: true,
+                    ease: 'power1.inOut',
+                    duration: 2,
+                },
+                opacity: 2,
+            }
+        );
+
+        gsap.fromTo(
+            '.peculiarities-item--tree',
+            { opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: '.peculiarities-item--tree',
+                    start: 'top 50%',
+                    end: 'top center',
+                    scrub: true,
+                    ease: 'power1.inOut',
+                    duration: 2,
+                },
+                opacity: 2,
+            }
+        );
+
+
         gsap.to('.peculiarities-item--one', {
             scrollTrigger: {
                 trigger: '.peculiarities-item--one', // Триггером будет сама карточка
@@ -128,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 scrollTrigger: {
                     trigger: '.pin-content',
                     start: 'top top', // Начало анимации на самом верху
-                    end: '+=700', // Продолжительность скролла
+                    end: '+=300', // Продолжительность скролла
                     scrub: true,
                     pin: true, // Закрепляем секцию
                     anticipatePin: 1,
@@ -138,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Первая карточка на мобильных устройствах
             gsap.fromTo('.peculiarities-item--one',
-                { rotation: 12 },
+                { rotation: 0 },
                 {
                     scrollTrigger: {
                         trigger: '.peculiarities-item--one',
@@ -220,21 +253,21 @@ document.addEventListener("DOMContentLoaded", () => {
             duration: 2,
         });
 
-        gsap.fromTo(
-            '.face-peculiarities-item--tree',
-            { opacity: 0 },
-            {
-                scrollTrigger: {
-                    trigger: '.face-peculiarities-item--tree', // Триггер для первой карточки
-                    start: 'top 20%', // Начать выравнивание чуть раньше
-                    end: 'top center', // Завершить выравнивание
-                    scrub: true,
-                    ease: 'power1.inOut',
-
-                },
-                opacity: 1,
-            }
-        );
+        // gsap.fromTo(
+        //     '.face-peculiarities-item--tree',
+        //     { opacity: 0 },
+        //     {
+        //         scrollTrigger: {
+        //             trigger: '.face-peculiarities-item--tree', // Триггер для первой карточки
+        //             start: 'top 20%', // Начать выравнивание чуть раньше
+        //             end: 'top center', // Завершить выравнивание
+        //             scrub: true,
+        //             ease: 'power1.inOut',
+        //
+        //         },
+        //         opacity: 1,
+        //     }
+        // );
 
         gsap.to('.face-peculiarities-item--tree', {
             scrollTrigger: {
@@ -249,21 +282,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        gsap.fromTo(
-            '.face-peculiarities-item--two',
-            { opacity: 0 },
-            {
-                scrollTrigger: {
-                    trigger: '.face-peculiarities-item--tree', // Триггер для первой карточки
-                    start: 'top 10%', // Начать выравнивание чуть раньше
-                    end: 'top center', // Завершить выравнивание
-                    scrub: true,
-                    ease: 'power1.inOut',
-
-                },
-                opacity: 1,
-            }
-        );
+        // gsap.fromTo(
+        //     '.face-peculiarities-item--two',
+        //     { opacity: 0 },
+        //     {
+        //         scrollTrigger: {
+        //             trigger: '.face-peculiarities-item--tree', // Триггер для первой карточки
+        //             start: 'top 10%', // Начать выравнивание чуть раньше
+        //             end: 'top center', // Завершить выравнивание
+        //             scrub: true,
+        //             ease: 'power1.inOut',
+        //
+        //         },
+        //         opacity: 1,
+        //     }
+        // );
 
         gsap.to('.face-peculiarities-item--two', {
             scrollTrigger: {
@@ -278,13 +311,79 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
+    const initAnimationFaceMobile = () => {
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.face-pin-content',
+                start: 'top 10%',
+                end: '+=300',
+                scrub: true,
+                pin: true,
+                anticipatePin: 1,
+            }
+        });
+
+        gsap.to('.face-peculiarities-item--one', {
+            scrollTrigger: {
+                trigger: '.face-peculiarities-item--one',
+                start: 'top center',
+                end: '+=300',
+                scrub: true,
+            },
+            yPercent: -250,
+            ease: 'power1.inOut',
+            duration: 2,
+        });
+
+
+        gsap.to('.face-peculiarities-item--tree', {
+            scrollTrigger: {
+                trigger: '.face-peculiarities-item--tree',
+                start: 'top center-=200',
+                end: '+=300',
+                scrub: true,
+            },
+            yPercent: -250,
+            ease: 'power1.inOut',
+            duration: 2,
+        });
+
+
+
+        gsap.to('.face-peculiarities-item--two', {
+            scrollTrigger: {
+                trigger: '.face-peculiarities-item--two',
+                start: 'top center-=400',
+                end: '+=300',
+                scrub: true,
+            },
+            yPercent: -250,
+            ease: 'power1.inOut',
+            duration: 2,
+        });
+    };
+
+
     ScrollTrigger.matchMedia({
         "(min-width: 769px)": () => {
-            initAnimationFace(); // Запускаем анимацию для больших экранов
+            // const animationTriggers = initAnimationFace(); // Сохраняем триггеры
+            initAnimationFace()
+            ScrollTrigger.matchMedia({
+                "(max-width: 768px)": () => {
+                    // Удаляем только триггеры `initAnimationFace`
+                    // animationTriggers.forEach(trigger => trigger.kill());
+
+
+                }
+            });
         },
         "(max-width: 768px)": () => {
-            // Удаляем все триггеры для экранов до 768px
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            ScrollTrigger.matchMedia({
+                "(max-width: 768px)": () => {
+                    initAnimationFaceMobile()
+                }
+            });
+
         }
     });
     window.addEventListener('resize', () => {
@@ -309,8 +408,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     scale: 3.5,
                     opacity: 0,
-                    y: -800,
-                    z: -700,
+                    y: -300,
+                    z: -200,
                 },
                 {
                     scale: 1,
@@ -332,7 +431,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     initAnimationUsage();
-
 
     window.addEventListener('resize', () => {
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());

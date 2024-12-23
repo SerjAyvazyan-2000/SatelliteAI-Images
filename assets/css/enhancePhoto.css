@@ -10,8 +10,17 @@
     position: absolute;
     left: 0;
     top: -10px;
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat;
+    z-index: 3;
+
 }
 
+
+.enhance-hero-title {
+    padding-top: 52px;
+}
 
 .photo-hero-section {
     position: relative;
@@ -35,17 +44,60 @@
 
 .photo-style_cnt {
     position: relative;
-    gap: 12px;
     align-items: flex-end;
     min-height: 392px;
+    min-width: 800px;
+    width: 100%;
+    overflow: hidden;
 }
 
+.photo-style-items {
+    gap: 12px;
+
+}
+
+
+
+
+.photo-mockup-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--white);
+    margin-left: 30px;
+
+
+}
+
+.photo-style_cnt .photo-mockup-bg {
+    position: absolute;
+    left: 20%;
+    top: 49%;
+    background: rgba(23, 23, 23, 1);
+    width: 320px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 70px 60px 0 0;
+}
+@keyframes infiniteScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 .photo-style-item {
-    width: 256px;
+    min-width: 256px;
     height: 256px;
     border-radius: 16px;
     position: relative;
     padding: 8px;
+    z-index: 2;
+    animation: infiniteScroll 2s linear infinite;
+
 }
 
 .photo-style-name {
@@ -214,7 +266,7 @@
 
 @media (max-width: 576px) {
     .text-mobile-size {
-      font-size: 15.8px;
+        font-size: 15.8px;
     }
 
 }

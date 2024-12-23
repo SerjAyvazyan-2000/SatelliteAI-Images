@@ -54,17 +54,6 @@
 
 }
 
-.avatar-hero-body {
-    gap: 20px;
-    max-width: 1068px;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 60px 14px 0 14px;
-    position: relative;
-    z-index: 3;
-
-}
-
 
 
 .advantages-collage {

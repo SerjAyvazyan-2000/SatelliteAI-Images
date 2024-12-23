@@ -114,45 +114,6 @@ setupGifToggle('.video-block');
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const slider = document.querySelector('.before-after-slider');
-    const handle = document.querySelector('.slider-handle');
-    const afterImage = document.querySelector('.after-image');
-
-    let isDragging = false;
-
-    const onMouseMove = (event) => {
-        if (!isDragging) return;
-
-        const rect = slider.getBoundingClientRect();
-        let offsetX = event.clientX - rect.left;
-
-        // Ограничиваем движение внутри контейнера
-        if (offsetX < 0) offsetX = 0;
-        if (offsetX > rect.width) offsetX = rect.width;
-
-        const percentage = (offsetX / rect.width) * 100;
-
-        // Перемещаем полосу и изменяем видимость изображения
-        handle.style.left = `${percentage}%`;
-        afterImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
-    };
-
-    const onMouseDown = () => {
-        isDragging = true;
-        document.addEventListener('mousemove', onMouseMove);
-        document.addEventListener('mouseup', onMouseUp);
-    };
-
-    const onMouseUp = () => {
-        isDragging = false;
-        document.removeEventListener('mousemove', onMouseMove);
-        document.removeEventListener('mouseup', onMouseUp);
-    };
-
-    handle.addEventListener('mousedown', onMouseDown);
-});
-
 
 
 
@@ -339,41 +300,20 @@ document.addEventListener("DOMContentLoaded", () => {
     updateImages();
 });
 
-
 document.querySelectorAll('.video-block').forEach(block => {
     const videoPlayer = block.querySelector('.videoPlayer');
-    let isPlaying = false;
 
     function playVideo() {
-        if(videoPlayer){
-            // videoPlayer.style.display = "block";
+        if (videoPlayer) {
+            videoPlayer.play().catch(error => {
+                console.error('Ошибка воспроизведения видео:', error);
+            });
         }
-        videoPlayer.play();
-
-        isPlaying = true;
     }
 
-    function stopVideo() {
-        if(videoPlayer){
-            videoPlayer.style.display = "none";
-            videoPlayer.pause();
-            videoPlayer.currentTime = 0;
-        }
+    videoPlayer.addEventListener('canplay', playVideo);
 
-        isPlaying = false;
-    }
+    videoPlayer.addEventListener('ended', playVideo);
 
-    if (block.classList.contains('autoplay')) {
-        videoPlayer.addEventListener('canplay', () => {
-            playVideo();
-        });
-    }
-
-
-    if (videoPlayer) {
-        videoPlayer.addEventListener("ended", stopVideo);
-
-    }
+    videoPlayer.addEventListener('pause', playVideo);
 });
-
-

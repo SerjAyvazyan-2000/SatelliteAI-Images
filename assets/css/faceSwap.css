@@ -1,7 +1,7 @@
 
 .face-hero-section {
     position: relative;
-    min-height: 748px;
+    min-height: 630px;
     margin-top: 114px;
 }
 
@@ -28,6 +28,16 @@
     max-width: 490px;
     width: 100%;
     height: 512px;
+    position: relative;
+
+}
+
+.image-position {
+    object-position: 0 0;
+}
+
+.image-position-top {
+    object-position: 0 -40px;
 
 }
 
@@ -40,10 +50,22 @@
     width: 100%;
 }
 
+.face-btn-cnt {
+    margin-top: 32px;
+    width: 100%
+}
+
 .face-hero-btn {
     max-width: 167px;
     width: 100%;
-    margin-top: 32px;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.face-hero-btn.active {
+    margin-right: 0;
+    max-width: 175px;
+
 }
 
 .improve-peculiarities-section {
@@ -147,6 +169,7 @@
     position: relative;
     width: 100%;
 }
+
 .face-peculiarities-section::after {
     content: "";
     left: 0;
@@ -159,6 +182,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .face-peculiarities-section {
     position: relative;
     min-height: 1000px;
@@ -180,11 +204,13 @@
     height: 100%;
     object-fit: cover;
 }
-.face-reviews-left-img{
+
+.face-reviews-left-img {
     height: 260px;
 
 }
-.face-reviews-left-img img{
+
+.face-reviews-left-img img {
     border-radius: 20px;
     width: 100%;
     object-fit: cover;
@@ -206,7 +232,11 @@
     .face-hero-body {
         flex-direction: column;
     }
-    .face-reviews-left-img{
+    .image-position-top {
+        object-position: 0 0;
+
+    }
+    .face-reviews-left-img {
         height: 237px;
     }
 
@@ -219,8 +249,10 @@
         text-align: center;
     }
 
-    .face-hero-btn {
-        margin: 28px auto 0;
+    .face-btn-cnt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .face-peculiarities-section {
@@ -259,8 +291,11 @@
         margin-top: 86px;
     }
 
+    .face-btn-cnt {
+        margin-top: 28px;
+    }
+
     .face-peculiarities-section {
-        min-height: 800px;
         margin-top: 80px;
     }
 
