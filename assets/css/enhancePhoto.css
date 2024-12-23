@@ -1,0 +1,220 @@
+
+.photo-hero-body {
+    gap: 120px;
+    padding-top: 80px;
+}
+
+.photo-hero-style {
+    width: 320px;
+    height: 392px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+
+.photo-hero-section {
+    position: relative;
+    min-height: 666px;
+    margin-top: 114px;
+}
+
+.photo-hero-section::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 190%;
+    z-index: 1;
+    background-image: url('../images/photoHeroBg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo-style_cnt {
+    position: relative;
+    gap: 12px;
+    align-items: flex-end;
+    min-height: 392px;
+}
+
+.photo-style-item {
+    width: 256px;
+    height: 256px;
+    border-radius: 16px;
+    position: relative;
+    padding: 8px;
+}
+
+.photo-style-name {
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    width: max-content;
+    border-radius: 100px;
+
+}
+
+.photo-style-name p {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    opacity: .7;
+
+}
+
+.photo-hero-titles {
+    min-width: 460px;
+    width: 100%;
+}
+
+.photo-tools-items {
+    gap: 16px;
+}
+
+.photo-tools-item {
+    padding: 24px;
+    max-width: 388px;
+    width: 100%;
+    position: relative;
+    background: rgba(30, 30, 32, 1);
+    border-radius: 16px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.photo-tools-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(105.61deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    box-shadow: 0px 0px 16px 0px rgba(99, 86, 254, 0.08);
+    transition: .3s;
+}
+
+.photo-tools-item:hover::before {
+    background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
+}
+
+.photo-tools-item.active::before {
+    background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
+}
+
+.photo-tools-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.photo-tools-cnt {
+    width: 100%;
+}
+
+.photo-tools-main {
+    gap: 20px;
+    width: 100%;
+}
+
+
+.photo-tools-sub {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: var(--white);
+    opacity: .7;
+    margin-top: 8px;
+
+}
+
+.photo-tools-video {
+    width: 792px;
+    height: 404px;
+    border-radius: 20px;
+
+}
+
+.photo-tools-btn {
+    width: 100%;
+    max-width: 159px;
+    margin: 32px auto 0;
+}
+
+.photo-tools-btn.active {
+    max-width: 170px;
+
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+    .photo-tools-main {
+        flex-direction: column-reverse;
+    }
+
+    .photo-tools-video {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .photo-tools-items {
+        flex-direction: row;
+        overflow: auto;
+        gap: 12px;
+    }
+
+    .photo-tools-item {
+        min-width: 260px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .photo-tools-item {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-tools-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .photo-tools-sub {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .photo-tools-main {
+        gap: 16px;
+    }
+
+    .photo-tools-video {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-mobile-size {
+      font-size: 15.8px;
+    }
+
+}

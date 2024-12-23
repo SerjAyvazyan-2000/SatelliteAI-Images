@@ -5,9 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Удаление фона</title>
+    <title>Background Removal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/css/twentytwenty.min.css">
 
 </head>
 <body>
@@ -23,34 +24,33 @@
                 </a>
                 <div class="menu-bg"></div>
                 <nav class="menu">
-
-                    <div class="menu-content-mobile">
-                        <a class="header-logo" href="">
-                            <img src="assets/images/logo.svg" alt="">
-                        </a>
-                    </div>
-
-                    <ul class="menu-list G-flex">
-                        <li class='menu-list-item'>
-                            <a class="menu-list-link G-align-center" href="#possibilities">
-                                <span>Возможности</span>
+                    <div class="menu-mobile-cnt">
+                        <div class="menu-content-mobile">
+                            <a class="header-logo" href="">
+                                <img src="assets/images/logo.svg" alt="">
                             </a>
-                        </li>
+                        </div>
+                        <ul class="menu-list G-flex">
+                            <li class='menu-list-item'>
+                                <a class="menu-list-link G-align-center" href="#possibilities">
+                                    <span>Возможности</span>
+                                </a>
+                            </li>
 
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#forWhom">Для кого</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#reviews">Отзывы</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#faq">FAQ</a>
-                        </li>
-                    </ul>
-
-                    <div class="header-mobile-actions ">
-                        <button class="btn-login btn-black ">Вход</button>
-                        <button class="btn-register btn-white  ">Регистрация</button>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#forWhom">Для кого</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="header-mobile-actions ">
+                            <button class="btn-login btn-black ">Вход</button>
+                            <button class="btn-register btn-white  ">Регистрация</button>
+                        </div>
                     </div>
 
                 </nav>
@@ -70,30 +70,35 @@
             <div class="container">
                 <div class="remove-hero-body">
                     <div class="hero-titles main-titles">
-                        <h1 class="hero-title">
+                        <h1 class="remove-hero-title hero-title">
                             <span class="hero-gradient-text">Удаление фона</span>
                             <span class="text-wrap hero-gradient-mobile">с изображения за секунду</span>
                         </h1>
 
-                        <p class="hero-sub-title">
+                        <p class="remove-hero-sub hero-sub-title">
                             Используйте технологии нейросетей
                             <span class="text-wrap">для мгновенного удаления или замены фона</span>
                         </p>
-                        <div class="hero-btn gradient-hover G-align-center">
-                            <button class="btn-main">
-                                Удалить фон
-                            </button>
-                            <a class="icon icon-voice " href=""></a>
+                        <div class="hero-btn-cnt G-center">
+                            <div class="hero-btn gradient-hover G-align-center">
+                                <button class="btn-main">
+                                    Удалить фон
+                                </button>
+                                <a class="icon icon-voice " href=""></a>
+                            </div>
                         </div>
 
 
                     </div>
-                    <div style="background-image: url('assets/images/gif1.gif')"
-                         class="remove-hero-video G-image">
+                    <div class="remove-hero-video G-image">
+                        <video autoplay muted class="videoPlayer">
+                            <source src="./assets/video/removeFon.mp4" type="video/webm">
+                        </video>
                     </div>
 
+
                     <div class="remove-hero-images remove-img--one">
-                        <img src="assets/images/removeImg1.png" alt="image">
+                        <img src="assets/images/removeImg1.svg" alt="image">
                     </div>
                     <div class="remove-hero-images remove-img--two">
                         <img src="assets/images/removeImg2.png" alt="image">
@@ -104,6 +109,8 @@
                     <div class="remove-hero-images remove-img--for">
                         <img src="assets/images/removeImg4.png" alt="image">
                     </div>
+
+
                 </div>
 
             </div>
@@ -143,8 +150,10 @@
                                 <div class="swiper tools-swiper-result  ">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <div class="image-result-item G-flex">
-                                                <img src="assets/images/ImageSlider.png" alt="image">
+
+                                            <div class="remove-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage4.jpg" alt="image">
+                                                <img src="assets/images/beforeImage4.png" alt="image">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -163,19 +172,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tools-arrows-cnt">
-                                        <div class="tools-swiper-arrows">
-                                            <div class="tools-arrow tools-button-prev swiper-button-next  ">
-                                                <!--                                            <i class="icon icon-arrow-left icon-arrow"></i>-->
-                                            </div>
+                                    <!--                                    <div class="tools-arrows-cnt">-->
+                                    <!--                                        <div class="tools-swiper-arrows">-->
+                                    <!--                                            <div class="tools-arrow tools-button-prev swiper-button-next  ">-->
+                                    <!--                                            </div>-->
 
-                                            <div class="tools-arrow tools-button-next swiper-button-prev ">
-                                                <!--                                            <i class="icon icon-arrow-right icon-arrow"></i>-->
-                                            </div>
+                                    <!--                                            <div class="tools-arrow tools-button-next swiper-button-prev ">-->
+                                    <!--                                            </div>-->
 
-                                        </div>
+                                    <!--                                        </div>-->
 
-                                    </div>
+                                    <!--                                    </div>-->
 
                                 </div>
                                 <div class="swiper tools-swiper-items">
@@ -347,7 +354,7 @@
         </section>
 
 
-        <section id="possibilities" class="possibilities-section">
+        <section id="possibilities" class="possibilities-section section">
             <div class="container">
                 <div class="possibilities-body ">
                     <h2 class="possibilities-block-title block-title">Возможности</h2>
@@ -396,61 +403,22 @@
                         </div>
                         <div class="possibilities-column G-flex">
 
-                            <div class="possibilities-slider-item possibilities-small-item">
-                                <div class="swiper tools-swiper-result">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="possibilities-item ">
-                                                <div class="possibilities-item-header">
-                                                    <div class="possibilities-item-picture G-flex">
-                                                        <img src="assets/images/possibilitiesSlider.png" alt="image">
-                                                    </div>
-                                                    <div class="tools-arrows-cnt">
-                                                        <div class="tools-swiper-arrows">
-                                                            <div class="tools-arrow tools-button-prev swiper-button-next"></div>
-                                                            <div class="tools-arrow tools-button-next swiper-button-prev"></div>
-                                                        </div>
-                                                    </div>
 
-                                                </div>
-                                                <div class="possibilities-item-info">
-                                                    <h4 class="possibilities-item-title">Улучшение качества</h4>
-                                                    <p class="possibilities-item-sub">
-                                                        Повышайте резкость
-                                                        <span class="text-wrap">и четкость изображений</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="possibilities-item ">
-                                                <div class="possibilities-item-header">
-                                                    <div class="possibilities-item-picture G-flex">
-                                                        <img src="assets/images/possibilitiesSlider.png" alt="image">
-                                                    </div>
-                                                    <div class="tools-arrows-cnt">
-                                                        <div class="tools-swiper-arrows">
-                                                            <div class="tools-arrow tools-button-prev swiper-button-next"></div>
-                                                            <div class="tools-arrow tools-button-next swiper-button-prev"></div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="possibilities-item-info">
-                                                    <h4 class="possibilities-item-title">Улучшение качества</h4>
-                                                    <p class="possibilities-item-sub">
-                                                        Повышайте резкость
-                                                        <span class="text-wrap">и четкость изображений</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                            <div class="possibilities-item possibilities-small-item">
+                                <div class="possibilities-item-header">
+                                    <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                        <img src="assets/images/afterImage.png" alt="image">
+                                        <img src="assets/images/beforeImage.png" alt="image">
                                     </div>
-
+                                </div>
+                                <div class="possibilities-item-info">
+                                    <h4 class="possibilities-item-title">Улучшение качества</h4>
+                                    <p class="possibilities-item-sub">
+                                        Повышайте резкость
+                                        <span class="text-wrap">и четкость изображений</span>
+                                    </p>
                                 </div>
                             </div>
-
 
                             <div class="possibilities-item margin-auth possibilities-big-item">
                                 <div class="possibilities-item-picture G-flex">
@@ -469,8 +437,11 @@
                         </div>
                         <div class="possibilities-column  G-justify-end">
                             <div class="possibilities-item possibilities-average-item">
-                                <div class="possibilities-item-picture G-flex">
-                                    <img src="assets/images/possibilities6.jpg" alt="image">
+                                <div class="possibilities-item-header">
+                                    <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                        <img src="assets/images/afterImage3.jpg" alt="image">
+                                        <img src="assets/images/beforeImage3.jpg" alt="image">
+                                    </div>
                                 </div>
                                 <div class="possibilities-item-info">
                                     <h4 class="possibilities-item-title">Дорисовка фото и изображений</h4>
@@ -483,8 +454,11 @@
 
 
                             <div class="possibilities-item possibilities-another-item">
-                                <div class="possibilities-item-picture G-flex">
-                                    <img src="assets/images/possibilities7.png" alt="image">
+                                <div class="possibilities-item-header">
+                                    <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                        <img src="assets/images/afterImage2.jpg" alt="image">
+                                        <img src="assets/images/beforeImage2.png" alt="image">
+                                    </div>
                                 </div>
                                 <div class="possibilities-item-info">
                                     <h4 class="possibilities-item-title">Замена лица на фото</h4>
@@ -1350,7 +1324,7 @@
             </div>
         </section>
 
-        <section  class="trust-section ">
+        <section class="trust-section ">
             <div class="trust-body G-column-center">
                 <h2 class="trust-title">
                     Доверьте создание <span class="text-wrap">контента Satellite AI</span>
@@ -1411,9 +1385,12 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="assets/js/index.js"></script>
 <script src="assets/js/swiper.js"></script>
 <script src="assets/js/gsap.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/js/jquery.twentytwenty.min.js"></script>
+<script src="assets/js/index.js"></script>
 
 </body>
 </html>

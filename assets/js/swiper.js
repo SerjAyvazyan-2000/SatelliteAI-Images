@@ -27,6 +27,7 @@ let swiper = new Swiper(".tools-swiper-items", {
 let swiper2 = new Swiper(".tools-swiper-result", {
     spaceBetween: 10,
     slidesPerView: 1,
+    allowTouchMove: false, // Отключает листание пальцами или курсором
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -52,6 +53,7 @@ let swiperResult2 = new Swiper(".tools-swiper-result2", {
 });
 
 
+
 let reviewsSwiper;
 
 function initSwiper() {
@@ -70,12 +72,12 @@ function initSwiper() {
             el: ".reviews-pagination",
             clickable: true,
         },
-        // loop: true,
-        // autoplay: {
-        //     delay: 0,
-        //     disableOnInteraction: false,
-        // },
-        // speed: 3000,
+        loop: true,
+        autoplay: {
+            delay: 10,
+            disableOnInteraction: false,
+        },
+        speed: 2000,
 
         breakpoints: {
             320: {slidesPerView: 1,},
@@ -91,10 +93,8 @@ function initSwiper() {
     });
 }
 
-// Вызываем функцию при загрузке страницы
 initSwiper();
 
-// Перепроверяем при изменении размера экрана
 window.addEventListener("resize", initSwiper);
 
 const swiperContainer = document.querySelector(".reviews-swiper");
@@ -105,4 +105,74 @@ swiperContainer.addEventListener("mouseenter", () => {
 
 swiperContainer.addEventListener("mouseleave", () => {
     reviewsSwiper.autoplay.start();
+});
+
+
+let advantagesSwiper = new Swiper(".advantages-slider", {
+    spaceBetween: 21,
+    slidesPerView: 3,
+
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    breakpoints: {
+        320: {slidesPerView: 1,},
+        370: {slidesPerView: 1.1,},
+        400: {slidesPerView: 1.2,},
+        540: {slidesPerView: 1.3,},
+        576: {slidesPerView: 1.5},
+        779: {slidesPerView: 2},
+        954: {slidesPerView: 2.4},
+        1139: {slidesPerView: 2.5},
+        1200: {slidesPerView: 3},
+
+    },
+
+
+});
+
+
+let creatingSwiper = new Swiper(".creating-swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    autoplay:true,
+    // loop: true,
+    initialSlide: 2,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 3,
+        slideShadows: true,
+    },
+    navigation: {
+        nextEl: ".creating-button-next",
+        prevEl: ".creating-button-prev",
+    },
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+        },
+        430: {
+            slidesPerView: 1.5,
+        },
+        540: {
+            slidesPerView: 1.5,
+        },
+        855: {
+            slidesPerView: 2,
+
+        },
+
+        1027: {
+            slidesPerView: 3,
+
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    }
+
 });

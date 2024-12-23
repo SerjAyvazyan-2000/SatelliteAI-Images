@@ -1,3 +1,11 @@
+
+
+$(document).ready(function () {
+    $(".possibilities-slider-picture").twentytwenty();
+});
+
+
+
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const header = document.querySelector('.header');
@@ -106,7 +114,44 @@ setupGifToggle('.video-block');
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.before-after-slider');
+    const handle = document.querySelector('.slider-handle');
+    const afterImage = document.querySelector('.after-image');
 
+    let isDragging = false;
+
+    const onMouseMove = (event) => {
+        if (!isDragging) return;
+
+        const rect = slider.getBoundingClientRect();
+        let offsetX = event.clientX - rect.left;
+
+        // Ограничиваем движение внутри контейнера
+        if (offsetX < 0) offsetX = 0;
+        if (offsetX > rect.width) offsetX = rect.width;
+
+        const percentage = (offsetX / rect.width) * 100;
+
+        // Перемещаем полосу и изменяем видимость изображения
+        handle.style.left = `${percentage}%`;
+        afterImage.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+    };
+
+    const onMouseDown = () => {
+        isDragging = true;
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+    };
+
+    const onMouseUp = () => {
+        isDragging = false;
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+    };
+
+    handle.addEventListener('mousedown', onMouseDown);
+});
 
 
 
@@ -207,3 +252,130 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+
+
+document.querySelectorAll('.avatar-cards').forEach((column) => {
+    column.addEventListener('mouseover', () => {
+        column.style.animationPlayState = 'paused';
+    });
+
+    column.addEventListener('mouseout', () => {
+        column.style.animationPlayState = 'running';
+    });
+});
+
+
+
+$(document).ready(function () {
+    $(".avatar-hero-style .avatar-style-item").hide();
+    $(".avatar-hero-style .avatar-style-item[data-id='original']").show();
+    $(".avatar-card").on("click", function () {
+        const selectedId = $(this).attr("data-id");
+        $(".avatar-hero-style .avatar-style-item").hide();
+        $(`.avatar-hero-style .avatar-style-item[data-id='${selectedId}']`).show();
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".photo-tools-item");
+    const videos = document.querySelectorAll(".photo-tools-video");
+
+    // Изначально активируем первый элемент
+    if (items.length > 0 && videos.length > 0) {
+        items[0].classList.add("active");
+        videos.forEach((video, index) => {
+            video.style.display = index === 0 ? "block" : "none"; // Показываем только первое видео
+        });
+    }
+
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+            const selectedId = item.getAttribute("data-id");
+
+            // Удаляем класс active у всех элементов
+            items.forEach(i => i.classList.remove("active"));
+            videos.forEach(video => video.style.display = "none");
+
+            // Добавляем класс active к текущему элементу
+            item.classList.add("active");
+
+            // Показываем только соответствующий блок
+            const videoToShow = document.querySelector(`.photo-tools-video[data-id="${selectedId}"]`);
+            if (videoToShow) {
+                videoToShow.style.display = "block";
+            }
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const mockup = document.querySelector(".improve-hero-mockup");
+    const cards = document.querySelectorAll(".improve-hero-card img");
+
+    // Проверка, находится ли элемент в блоке мокапа
+    function isInMockup(element) {
+        const rect = element.getBoundingClientRect();
+        const mockupRect = mockup.getBoundingClientRect();
+        return (
+            rect.top < mockupRect.bottom &&
+            rect.bottom > mockupRect.top &&
+            rect.left < mockupRect.right &&
+            rect.right > mockupRect.left
+        );
+    }
+
+    // Функция для замены изображений
+    function updateImages() {
+        cards.forEach((img) => {
+            if (isInMockup(img) && img.dataset.highSrc) {
+                img.src = img.dataset.highSrc; // Меняем src на high-quality
+                img.dataset.highSrc = ""; // Убираем, чтобы повторно не менять
+            }
+        });
+        requestAnimationFrame(updateImages); // Постоянно вызываем проверку
+    }
+
+    // Запуск постоянного рендера
+    updateImages();
+});
+
+
+document.querySelectorAll('.video-block').forEach(block => {
+    const videoPlayer = block.querySelector('.videoPlayer');
+    let isPlaying = false;
+
+    function playVideo() {
+        if(videoPlayer){
+            // videoPlayer.style.display = "block";
+        }
+        videoPlayer.play();
+
+        isPlaying = true;
+    }
+
+    function stopVideo() {
+        if(videoPlayer){
+            videoPlayer.style.display = "none";
+            videoPlayer.pause();
+            videoPlayer.currentTime = 0;
+        }
+
+        isPlaying = false;
+    }
+
+    if (block.classList.contains('autoplay')) {
+        videoPlayer.addEventListener('canplay', () => {
+            playVideo();
+        });
+    }
+
+
+    if (videoPlayer) {
+        videoPlayer.addEventListener("ended", stopVideo);
+
+    }
+});
+
+
