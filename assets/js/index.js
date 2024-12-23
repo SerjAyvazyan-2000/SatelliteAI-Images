@@ -297,10 +297,8 @@ document.addEventListener("DOMContentLoaded", () => {
             items.forEach(i => i.classList.remove("active"));
             videos.forEach(video => video.style.display = "none");
 
-            // Добавляем класс active к текущему элементу
             item.classList.add("active");
 
-            // Показываем только соответствующий блок
             const videoToShow = document.querySelector(`.photo-tools-video[data-id="${selectedId}"]`);
             if (videoToShow) {
                 videoToShow.style.display = "block";
