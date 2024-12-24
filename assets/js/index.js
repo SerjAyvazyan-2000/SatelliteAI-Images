@@ -226,6 +226,36 @@ document.querySelectorAll('.avatar-cards').forEach((column) => {
     });
 });
 
+document.querySelectorAll('.peculiarities-column--one').forEach((column) => {
+    column.addEventListener('mouseover', () => {
+        column.style.animationPlayState = 'paused';
+    });
+
+    column.addEventListener('mouseout', () => {
+        column.style.animationPlayState = 'running';
+    });
+});
+
+
+document.querySelectorAll('.peculiarities-column--two').forEach((column) => {
+    column.addEventListener('mouseover', () => {
+        column.style.animationPlayState = 'paused';
+    });
+
+    column.addEventListener('mouseout', () => {
+        column.style.animationPlayState = 'running';
+    });
+});
+
+document.querySelectorAll('.peculiarities-column--tree').forEach((column) => {
+    column.addEventListener('mouseover', () => {
+        column.style.animationPlayState = 'paused';
+    });
+
+    column.addEventListener('mouseout', () => {
+        column.style.animationPlayState = 'running';
+    });
+});
 
 
 $(document).ready(function () {

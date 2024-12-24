@@ -39,6 +39,7 @@
 
 .avatar-hero-btn.active {
     max-width: 180px;
+
 }
 
 .avatar-hero-titles {
@@ -530,9 +531,13 @@
 }
 
 .advantages-btn {
-    margin: 28px auto 0;
     max-width: 167px;
     width: 100%;
+    margin-right: 30px;
+}
+
+.advantages-btn-cnt {
+    margin-top: 28px;
 }
 
 .avatar-hero-body {
@@ -545,6 +550,7 @@
     z-index: 3;
 
 }
+
 .advantages-body {
     position: relative;
     z-index: 3;
@@ -569,6 +575,7 @@
 
 .advantages-btn.active {
     max-width: 180px;
+    margin-right: 0;
 }
 
 .advantages-label input[type = 'file'] {
@@ -588,10 +595,12 @@
         position: inherit !important;
         margin-top: 24px !important;
     }
+
     .collage-hero-body {
         flex-direction: column;
         gap: 48px;
     }
+
     .advantages-avatar-item {
         min-width: 182px;
     }
@@ -606,10 +615,11 @@
         padding: 0;
         max-width: 100%;
     }
-    .advantages-btn {
-        margin: 40px auto 0;
 
+    .advantages-btn-cnt {
+        margin-top: 40px;
     }
+
 
     .advantages-avatars::before {
         display: none;
@@ -718,6 +728,7 @@
         min-height: 910px;
         margin-top: 86px;
     }
+
     .usage-picture img {
         border-radius: 16px;
     }
@@ -725,9 +736,11 @@
     .avatar-hero-titles {
         padding-top: 0;
     }
+
     .avatar-hero-style {
         height: 600px;
     }
+
     .avatar-card {
         min-width: 200px;
         height: 260px;
@@ -760,7 +773,7 @@
     }
 
     .advantages-section {
-        min-height: 822px;
+        min-height: 660px;
         margin-top: 80px;
     }
 
@@ -769,13 +782,16 @@
         line-height: 20px;
         margin-top: 8px;
     }
+
     .avatar-cards {
         gap: 12px;
 
     }
-    .avatar-cards-cnt{
+
+    .avatar-cards-cnt {
         margin-top: -260px;
     }
+
     .icon-advantages {
         font-size: 28px;
     }

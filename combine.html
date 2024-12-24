@@ -25,34 +25,33 @@
                 </a>
                 <div class="menu-bg"></div>
                 <nav class="menu">
-
-                    <div class="menu-content-mobile">
-                        <a class="header-logo" href="">
-                            <img src="assets/images/logo.svg" alt="">
-                        </a>
-                    </div>
-
-                    <ul class="menu-list G-flex">
-                        <li class='menu-list-item'>
-                            <a class="menu-list-link G-align-center" href="#possibilities">
-                                <span>Возможности</span>
+                    <div class="menu-mobile-cnt">
+                        <div class="menu-content-mobile">
+                            <a class="header-logo" href="">
+                                <img src="assets/images/logo.svg" alt="">
                             </a>
-                        </li>
+                        </div>
+                        <ul class="menu-list G-flex">
+                            <li class='menu-list-item'>
+                                <a class="menu-list-link G-align-center" href="#possibilities">
+                                    <span>Возможности</span>
+                                </a>
+                            </li>
 
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#forWhom">Для кого</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#reviews">Отзывы</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#faq">FAQ</a>
-                        </li>
-                    </ul>
-
-                    <div class="header-mobile-actions ">
-                        <button class="btn-login btn-black ">Вход</button>
-                        <button class="btn-register btn-white  ">Регистрация</button>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#forWhom">Для кого</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="header-mobile-actions ">
+                            <button class="btn-login btn-black ">Вход</button>
+                            <button class="btn-register btn-white  ">Регистрация</button>
+                        </div>
                     </div>
 
                 </nav>
@@ -78,13 +77,15 @@
 
                     <p class="avatar-hero-sub hero-sub-title">
                         Комбинируйте фотографии и создавайте гармоничное
-                        <span class="text-wrap">изображение всего за пару кликов</span>
+                        <span class="desktop-text-wrap">изображение всего за пару кликов</span>
                     </p>
-                    <div class="avatar-hero-btn gradient-hover G-align-center">
-                        <button class="btn-main">
-                            Начать сейчас
-                        </button>
-                        <a class="icon icon-voice " href=""></a>
+                    <div class="collage-btn-cnt ">
+                        <div class=" collage-hero-btn   gradient-hover G-align-center">
+                            <button class="btn-main">
+                                Начать сейчас
+                            </button>
+                            <a class="icon icon-voice " href=""></a>
+                        </div>
                     </div>
 
 
@@ -102,11 +103,20 @@
         <section class="usage-section section">
             <div class="container">
                 <div class="usage-body G-column-center">
-                    <h2 class="block-title">Инструменты</h2>
-                    <h3 class="block-main-title">
-                        Создавайте уникальные
-                        <span class="text-wrap">изображения с Satellite AI</span>
-                    </h3>
+                    <div class="combine-desktop-header G-column-center">
+                        <h2 class="block-title">Инструменты</h2>
+                        <h3 class="block-main-title">
+                            Создавайте уникальные
+                            <span class="text-wrap">изображения с Satellite AI</span>
+                        </h3>
+                    </div>
+                    <div class="combine-mobile-header G-column-center">
+                        <h2 class="block-title">Особенности</h2>
+                        <h3 class="block-main-title">
+                            Волшебство
+                            <span class="text-wrap">за пару мгновений</span>
+                        </h3>
+                    </div>
 
                     <div class="collage-peculiarities-items block-cnt G-flex-column">
                         <div class="collage-peculiarities-item G-align-start">
@@ -236,8 +246,8 @@
                         <div class="possibilities-column G-flex">
                             <div class="possibilities-item possibilities-average-item ">
                                 <div class="possibilities-item-picture possibilities-slider-picture G-flex">
-                                    <img src="assets/images/afterImage4.jpg" alt="image">
-                                    <img src="assets/images/beforeImage4.png" alt="image">
+                                    <img class="image-position" src="assets/images/afterImage4.png" alt="image">
+                                    <img class="image-position" src="assets/images/beforeImage4.png" alt="image">
                                 </div>
                                 <div class="possibilities-item-info">
                                     <h4 class="possibilities-item-title">Удаление и замена фона</h4>
@@ -304,7 +314,7 @@
                             </div>
                         </div>
                         <div class="possibilities-column  G-justify-end">
-                            <div class="possibilities-item possibilities-average-item">
+                            <div class="possibilities-center-slide-item possibilities-average-item">
                                 <div class="possibilities-item-header">
                                     <div class="possibilities-item-picture possibilities-slider-picture G-flex">
                                         <img src="assets/images/afterImage3.jpg" alt="image">
@@ -373,15 +383,17 @@
                         <div class="possibilities-slider swiper ">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities.png" alt="image">
+                                    <div class="possibilities-item  ">
+                                        <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                            <img class="image-position" src="assets/images/afterImage4.png" alt="image">
+                                            <img class="image-position" src="assets/images/beforeImage4.png" alt="image">
                                         </div>
                                         <div class="possibilities-item-info">
-                                            <h4 class="possibilities-item-title">Генерация изображений</h4>
-                                            <p class="possibilities-item-sub">Создавайте уникальные изображения в нужном
-                                                стиле
-                                                <span class="desktop-text-wrap">за считанные секунды по любому запросу</span>
+                                            <h4 class="possibilities-item-title">Удаление и замена фона</h4>
+                                            <p class="possibilities-item-sub">
+                                                Удалите фон с изображения
+                                                <span class="text-wrap">или замените его на любой другой,</span>
+                                                 который вам нравится
                                             </p>
                                         </div>
                                     </div>
@@ -417,21 +429,23 @@
                                     </div>
 
                                 </div>
-
                                 <div class="swiper-slide">
                                     <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities4.png" alt="image">
+                                        <div class="possibilities-item-header">
+                                            <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage.png" alt="image">
+                                                <img src="assets/images/beforeImage.png" alt="image">
+                                            </div>
                                         </div>
                                         <div class="possibilities-item-info">
                                             <h4 class="possibilities-item-title">Улучшение качества</h4>
                                             <p class="possibilities-item-sub">
                                                 Повышайте резкость
-                                                <span class="desktop-text-wrap">и четкость <span
-                                                        class="mobile-text-wrap">изображений</span></span>
+                                                <span class="desktop-text-wrap">и четкость изображений</span>
                                             </p>
                                         </div>
                                     </div>
+
 
                                 </div>
                                 <div class="swiper-slide">
@@ -451,9 +465,12 @@
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities6.jpg" alt="image">
+                                    <div class="possibilities-center-slide-item  possibilities-average-item">
+                                        <div class="possibilities-item-header">
+                                            <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage3.jpg" alt="image">
+                                                <img src="assets/images/beforeImage3.jpg" alt="image">
+                                            </div>
                                         </div>
                                         <div class="possibilities-item-info">
                                             <h4 class="possibilities-item-title">Дорисовка фото и изображений</h4>
@@ -464,21 +481,26 @@
                                         </div>
                                     </div>
 
+
+
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities7.png" alt="image">
+                                        <div class="possibilities-item-header">
+                                            <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage2.jpg" alt="image">
+                                                <img src="assets/images/beforeImage2.png" alt="image">
+                                            </div>
                                         </div>
                                         <div class="possibilities-item-info">
                                             <h4 class="possibilities-item-title">Замена лица на фото</h4>
                                             <p class="possibilities-item-sub">
                                                 Меняйте лица на фото с высоким уровнем точности и естественности
-                                                <span class="text-wrap"> с помощью современных технологий <span
-                                                        class="desktop-text">обработки изображений</span></span>
+                                                <span class="desktop-text-wrap"> с помощью современных технологий <span class="text-none">обработки изображений</span></span>
                                             </p>
                                         </div>
                                     </div>
+
 
                                 </div>
                                 <div class="swiper-slide">
@@ -495,7 +517,6 @@
                                     </div>
 
                                 </div>
-
                                 <div class="swiper-slide">
                                     <div class="possibilities-item  ">
                                         <div class="possibilities-item-picture G-flex">
@@ -510,6 +531,21 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
+                                    <div class="possibilities-item ">
+                                        <div class="possibilities-item-picture G-flex">
+                                            <img src="assets/images/possibilities.png" alt="image">
+                                        </div>
+                                        <div class="possibilities-item-info">
+                                            <h4 class="possibilities-item-title">Генерация изображений</h4>
+                                            <p class="possibilities-item-sub">Создавайте уникальные изображения в нужном
+                                                стиле
+                                                <span class="desktop-text-wrap">за считанные секунды по любому запросу</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
 
                             </div>
                             <div class="possibilities-pagination swiper-pagination"></div>
@@ -517,12 +553,14 @@
                         </div>
                     </div>
 
+                    <div class="possibilities-btn-cnt G-center">
+                        <div class="possibilities-btn gradient-hover G-align-center">
+                            <button class="btn-main">
+                                Попробовать сейчас
+                            </button>
+                            <a class="icon icon-voice " href=""></a>
+                        </div>
 
-                    <div class="possibilities-btn gradient-hover G-align-center">
-                        <button class="btn-main">
-                            Попробовать сейчас
-                        </button>
-                        <a class="icon icon-voice " href=""></a>
                     </div>
 
 
@@ -1187,11 +1225,13 @@
                     <span class="text-wrap">работы с изображениями</span>
                 </p>
 
-                <div class="trust-btn gradient-hover G-align-center">
-                    <button class="btn-main">
-                        Начать работу
-                    </button>
-                    <a class="icon icon-voice " href=""></a>
+                <div class="trust-btn-cnt G-center">
+                    <div class="trust-btn gradient-hover G-align-center">
+                        <button class="btn-main">
+                            Начать работу
+                        </button>
+                        <a class="icon icon-voice " href=""></a>
+                    </div>
                 </div>
 
 

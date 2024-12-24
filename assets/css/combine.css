@@ -28,7 +28,9 @@
     height: 100%;
     margin-top: 90px;
 }
-
+.combine-mobile-header{
+    display: none;
+}
 @media (max-width: 1400px) {
 }
 
@@ -52,6 +54,21 @@
         max-width: 276px;
         max-height: 276px;
         margin-top: 90px;
+    }
+    .combine-desktop-header{
+        display: none;
+    }
+    .combine-mobile-header{
+        display: flex;
+    }
+    .combine-hero-section {
+        min-height: 700px;
+        margin-top: 84px;
+    }
+    .combine-hero-section::after {
+        height: 150%;
+        background-image: url('../images/combineHeroBgMobile.png');
+
     }
 }
 

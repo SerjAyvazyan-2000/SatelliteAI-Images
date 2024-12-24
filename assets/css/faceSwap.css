@@ -68,6 +68,8 @@
 
 }
 
+
+
 .improve-peculiarities-section {
     position: relative;
     min-height: 792px;
@@ -321,6 +323,14 @@
     .face-hero-body {
         gap: 48px;
     }
+    .face-peculiarities-item {
+        border-radius: 16px;
+    }
 
-
+    .face-peculiarities-item::before {
+        border-radius: 16px;
+    }
+    .face-peculiarities-section::after {
+        background-image: url('../images/faceFonMobile.png');
+    }
 }

@@ -33,6 +33,148 @@ document.querySelectorAll('.possibilities-slider-picture').forEach(twenty => {
 });
 
 
+let photoStyleSwiper = new Swiper(".photo-style-swiper", {
+    spaceBetween: 20,
+    slidesPerView:3,
+    loop: true,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+    },
+    speed: 3000,
+    on: {
+        slideChange: updatePhotoHeroStyle,
+        transitionStart: updatePhotoHeroStyle, // обновление раньше начала анимации
+
+    },
+    breakpoints: {
+        320: {slidesPerView: 4,spaceBetween: 10,},
+        490: {slidesPerView: 3},
+
+    },
+
+
+});
+
+function updatePhotoHeroStyle() {
+    const allItems = document.querySelectorAll(".photo-style-item");
+
+    allItems.forEach((item) => {
+        const lowQuality = item.getAttribute("data-low");
+        const highQuality = item.getAttribute("data-high");
+        const styleName = item.querySelector(".photo-style-name p");
+
+        const slide = item.closest(".swiper-slide");
+        if (slide.classList.contains("swiper-slide-active")) {
+            // Применяем плавную смену изображения
+            item.classList.add('hidden');  // Скрываем старое изображение
+            styleName.textContent = "Результат";
+
+            // Обновляем фоновое изображение
+            setTimeout(() => {
+                if (highQuality) {
+                    item.style.backgroundImage = `url('${highQuality}')`;
+                }
+                item.classList.remove('hidden');
+            }, 300);
+        } else {
+            if (lowQuality) {
+                styleName.textContent = "Оригинал";
+                item.style.backgroundImage = `url('${lowQuality}')`;
+            }
+        }
+    });
+}
+
+
+updatePhotoHeroStyle();
+
+
+
+
+let improveStyleSwiper = new Swiper(".improve-style-swiper", {
+    spaceBetween: 20,
+    slidesPerView:3,
+    loop: true,
+    centeredSlides: true,
+
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+    },
+    speed: 3000,
+    on: {
+        slideChange: updateImproveHeroStyle,
+        transitionStart: updateImproveHeroStyle,
+
+    },
+    breakpoints: {
+        320: {slidesPerView: 2,spaceBetween: 10,},
+        400: {slidesPerView: 2,spaceBetween: 12,},
+        500: {slidesPerView: 1.5,},
+        600: {slidesPerView: 2,},
+        700: {slidesPerView: 3,},
+
+        800: {slidesPerView: 4,},
+
+        1000: {slidesPerView: 4.5,spaceBetween: 12,},
+
+        1399: {slidesPerView: 5.3,spaceBetween: 12,},
+
+    },
+
+
+});
+
+function updateImproveHeroStyle() {
+    const allItemsImprove = document.querySelectorAll(".improve-hero-card");
+
+    allItemsImprove.forEach((item) => {
+        const lowQuality = item.getAttribute("data-low");
+        const highQuality = item.getAttribute("data-high");
+        const cardName = item.querySelector(".improve-card-name p");
+
+        const slide = item.closest(".swiper-slide");
+        if (slide.classList.contains("swiper-slide-active")) {
+            // Устанавливаем текст "Результат" для активного слайда
+            setTimeout(() => {
+                cardName.textContent = "Результат";
+            }, 300);
+
+            // Обновляем фон плавно
+            item.classList.add("hidden");
+            setTimeout(() => {
+                if (highQuality) {
+                    item.style.backgroundImage = `url('${highQuality}')`;
+                }
+                item.classList.remove("hidden");
+            }, 300);
+        } else {
+            // Возвращаем текст "Оригинал" для неактивных слайдов
+            cardName.textContent = "Оригинал";
+            if (lowQuality) {
+                item.style.backgroundImage = `url('${lowQuality}')`;
+            }
+        }
+    });
+}
+
+
+updateImproveHeroStyle();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let swiper = new Swiper(".tools-swiper-items", {
     slidesPerView: 4.3,
     freeMode: true,
@@ -65,7 +207,6 @@ let swiperResult2 = new Swiper(".tools-swiper-result2", {
         swiper: swiperTools2,
     },
 });
-
 
 
 let reviewsSwiper;
@@ -141,6 +282,9 @@ let advantagesSwiper = new Swiper(".advantages-slider", {
         1200: {slidesPerView: 3},
 
     },
+    on: {
+        slideChange: updateActiveText, // Обновляем текст при смене слайда
+    },
 
 
 });
@@ -148,14 +292,14 @@ let advantagesSwiper = new Swiper(".advantages-slider", {
 
 let creatingSwiper = new Swiper(".creating-swiper", {
     effect: "coverflow",
-    grabCursor: true,
     centeredSlides: true,
-    autoplay:true,
-    // loop: true,
+    // autoplay:true,
+    cursor: null,
+    loop: true,
     initialSlide: 2,
     coverflowEffect: {
         rotate: 0,
-        stretch: 0,
+        stretch: 1,
         depth: 100,
         modifier: 3,
         slideShadows: true,
@@ -168,15 +312,19 @@ let creatingSwiper = new Swiper(".creating-swiper", {
 
         320: {
             slidesPerView: 1,
+            effect: "slide", // Используем обычный слайдер на маленьких экранах
+            centeredSlides: false,
+            loop: false,
+            coverflowEffect: {}  // Убираем эффект
         },
         430: {
             slidesPerView: 1.5,
         },
         540: {
-            slidesPerView: 1.5,
+            slidesPerView: 2.4,
         },
-        855: {
-            slidesPerView: 2,
+        935: {
+            slidesPerView: 3,
 
         },
 
@@ -185,8 +333,98 @@ let creatingSwiper = new Swiper(".creating-swiper", {
 
         },
         1200: {
-            slidesPerView: 4,
+            slidesPerView: 3.5,
         },
     }
 
 });
+
+let creatingSwiperMobile = new Swiper(".creating-mobile-swiper", {
+    effect: "slide",
+    autoplay: true,
+    loop: true,
+    spaceBetween: 10,
+
+    pagination: {
+        el: ".creating-pagination",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        430: {
+            slidesPerView: 1,
+        },
+        540: {
+            slidesPerView: 1,
+
+        },
+        935: {
+            slidesPerView: 1,
+
+        },
+
+
+    }
+
+});
+
+
+creatingSwiper.on("slideChange", function () {
+    updateActiveText();
+});
+
+function updateActiveText() {
+    const activeSlide = document.querySelector(".swiper-slide-active");
+    if (!activeSlide) return;
+
+    const activeImg = activeSlide.querySelector(".creating-slide");
+    if(activeImg){
+        const activeId = activeImg.getAttribute("data-id");
+        document.querySelectorAll(".swiper-slide-text").forEach((text) => {
+            text.style.display = text.getAttribute("data-id") === activeId ? "block" : "none";
+        });
+
+    }
+
+
+
+}
+
+creatingSwiper.on("transitionEnd", updateActiveText);
+creatingSwiperMobile.on("transitionEnd", updateActiveText);
+
+document.querySelectorAll(".creating-slide-more").forEach((button) => {
+    button.addEventListener("click", function () {
+        const parentSlide = button.closest(".swiper-slide");
+        const images = parentSlide.querySelectorAll(".creating-slide-img img");
+        const currentImageIndex = Array.from(images).findIndex((img) => img.style.display === "block");
+
+        images.forEach((img) => (img.style.display = "none"));
+
+        const nextIndex = (currentImageIndex + 1) % images.length;
+        images[nextIndex].style.display = "block";
+
+        updateActiveText();
+    });
+});
+
+function initializeSlides() {
+    // Устанавливаем первую картинку для каждого слайда
+    document.querySelectorAll(".creating-slide-img").forEach((slideImg) => {
+        const images = slideImg.querySelectorAll("img");
+        images.forEach((img, index) => {
+            img.style.display = index === 0 ? "block" : "none";
+        });
+    });
+
+    // Отображаем текст, соответствующий первой картинке активного слайда
+    updateActiveText();
+}
+
+initializeSlides();
+
+
+
+
+

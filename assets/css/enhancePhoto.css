@@ -48,15 +48,23 @@
     min-height: 392px;
     min-width: 800px;
     width: 100%;
-    overflow: hidden;
 }
 
 .photo-style-items {
     gap: 12px;
+    margin-left: 20px;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
 
 }
 
+.photo-style-swiper {
+    max-width: 800px;
+    width: 100%;
 
+}
 
 
 .photo-mockup-title {
@@ -81,6 +89,8 @@
     z-index: 1;
     border-radius: 70px 60px 0 0;
 }
+
+
 @keyframes infiniteScroll {
     0% {
         transform: translateX(0);
@@ -89,15 +99,23 @@
         transform: translateX(-100%);
     }
 }
+
 .photo-style-item {
-    min-width: 256px;
+    max-width: 256px;
     height: 256px;
     border-radius: 16px;
     position: relative;
     padding: 8px;
     z-index: 2;
-    animation: infiniteScroll 2s linear infinite;
+}
 
+.photo-style-item {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.photo-style-item.hidden {
+    opacity: 0;
 }
 
 .photo-style-name {
@@ -158,6 +176,16 @@
     transition: .3s;
 }
 
+.enhance-advantages-item {
+    padding: 24px 24px 30px 24px;
+}
+
+.enhance-advantages {
+    font-size: 40px;
+    background: linear-gradient(86.94deg, #6356FE 0.62%, #764AEF 30.62%, #8A3EDF 61.67%, #A330CB 99.38%);
+
+}
+
 .photo-tools-item:hover::before {
     background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
 }
@@ -206,6 +234,10 @@
     margin: 32px auto 0;
 }
 
+.advantage-mockup-mobile {
+    display: none;
+}
+
 .photo-tools-btn.active {
     max-width: 170px;
 
@@ -240,6 +272,47 @@
     .photo-tools-item {
         padding: 20px;
     }
+
+    .photo-hero-body {
+        flex-direction: column;
+    }
+
+    .photo-style-items {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .enhance-hero-title {
+        text-align: center;
+    }
+
+    .photo-style_cnt .photo-mockup-bg {
+        top: 47%;
+        left: 16.5%;
+    }
+
+    .photo-hero-titles {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 931px) {
+    .photo-style_cnt .photo-mockup-bg {
+        left: 18%;
+    }
+}
+
+@media (max-width: 848px) {
+    .photo-style_cnt .photo-mockup-bg {
+        top: 47%;
+        left: 20%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -255,6 +328,14 @@
         line-height: 20px;
     }
 
+    .advantage-mockup-desktop {
+        display: none;
+    }
+
+    .advantage-mockup-mobile {
+        display: flex;
+    }
+
     .photo-tools-main {
         gap: 16px;
     }
@@ -268,5 +349,83 @@
     .text-mobile-size {
         font-size: 15.8px;
     }
+
+    .photo-hero-section {
+        position: relative;
+        min-height: 614px;
+        margin-top: 84px;
+    }
+
+    .photo-style-item {
+        max-width: 198px;
+        height: 198px;
+        border-radius: 16px;
+        position: relative;
+        padding: 8px;
+        z-index: 2;
+    }
+
+    .enhance-advantages-items {
+        margin-top: -30px;
+    }
+    .enhance-advantages-item{
+        padding: 20px;
+    }
+
+    .photo-style-items {
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .enhance-advantages{
+        font-size: 28px;
+    }
+    .photo-style_cnt {
+        align-items: center;
+    }
+
+    .enhance-hero-title {
+        padding-top: 0;
+    }
+
+    .photo-hero-body {
+        gap: 48px;
+    }
+
+    .photo-mockup-title {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .photo-style_cnt .photo-mockup-bg {
+        position: absolute;
+        left: 15.5%;
+        top: 38%;
+        background: rgba(23, 23, 23, 1);
+        width: 230px;
+        height: 280px;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .photo-hero-style {
+        width: 248px;
+        height: 304px;
+    }
+
+    .photo-hero-section::after {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-image: url('../images/photoHeroBgMobile.png');
+        background-position: unset;
+
+    }
+
 
 }

@@ -111,12 +111,24 @@
     border-radius: 20px;
     height: 400px;
 }
+.collage-peculiarities-picture{
+    max-width: 692px;
+    height: 400px;
+    width: 100%;
+}
 
 .drawing-item-picture img {
     border-radius: 20px;
     width: 100%;
     object-fit: cover;
     height: 100%;
+}
+.finish-advantages-video .videoPlayer{
+    border-radius: 12px!important;
+    margin-top: 10px;
+}
+.finish-advantages-btn{
+    margin-top: 36px;
 }
 @media (max-width: 1400px) {
 }
@@ -216,6 +228,10 @@
         top: -130px;
 
     }
+    .drawing-hero-section::after {
+        background-image: url('../images/drawingHeroBgMobile.png');
+
+    }
     .drawing-item-picture{
         border-radius: 20px;
         height: 204px;
@@ -228,10 +244,16 @@
         border-radius: 16px;
         margin: 40px auto 0;
     }
+    .drawing-hero-video .videoPlayer{
+        border-radius: 16px;
 
+    }
+    .collage-peculiarities-picture{
+        height: max-content;
+    }
     .drawing-hero-section {
         position: relative;
-        min-height: 600px;
+        min-height: 670px;
         margin-top: 84px;
 
     }

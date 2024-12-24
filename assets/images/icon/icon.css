@@ -184,3 +184,15 @@
     mask-image: url(drawing2.svg);
     -webkit-mask-image: url(drawing2.svg);
 }
+.enhance-advantages1{
+    mask-image: url(enhanceAdvantages1.svg);
+    -webkit-mask-image: url(enhanceAdvantages1.svg);
+}
+.enhance-advantages2{
+    mask-image: url(enhanceAdvantages2.svg);
+    -webkit-mask-image: url(enhanceAdvantages2.svg);
+}
+.enhance-advantages3{
+    mask-image: url(enhanceAdvantages3.svg);
+    -webkit-mask-image: url(enhanceAdvantages3.svg);
+}

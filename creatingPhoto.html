@@ -25,34 +25,36 @@
                 </a>
                 <div class="menu-bg"></div>
                 <nav class="menu">
+                    <div class="menu-mobile-cnt">
+                        <div class="menu-content-mobile G-flex-column">
+                            <h3 class="menu-mobile-title">Satellite AI</h3>
+                            <p class="menu-mobile-clue">
+                                Универсальная платформа
+                                <span class="text-wrap"> для удаление фона c фото</span>
+                                <span class="text-wrap">в один клик</span>
+                            </p>
+                        </div>
+                        <ul class="menu-list G-flex">
+                            <li class='menu-list-item'>
+                                <a class="menu-list-link G-align-center" href="#possibilities">
+                                    <span>Возможности</span>
+                                </a>
+                            </li>
 
-                    <div class="menu-content-mobile">
-                        <a class="header-logo" href="">
-                            <img src="assets/images/logo.svg" alt="">
-                        </a>
-                    </div>
-
-                    <ul class="menu-list G-flex">
-                        <li class='menu-list-item'>
-                            <a class="menu-list-link G-align-center" href="#possibilities">
-                                <span>Возможности</span>
-                            </a>
-                        </li>
-
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#forWhom">Для кого</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#reviews">Отзывы</a>
-                        </li>
-                        <li class="menu-list-item">
-                            <a class="menu-list-link" href="#faq">FAQ</a>
-                        </li>
-                    </ul>
-
-                    <div class="header-mobile-actions ">
-                        <button class="btn-login btn-black ">Вход</button>
-                        <button class="btn-register btn-white  ">Регистрация</button>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#forWhom">Для кого</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="header-mobile-actions ">
+                            <button class="btn-login btn-black ">Вход</button>
+                            <button class="btn-register btn-white  ">Регистрация</button>
+                        </div>
                     </div>
 
                 </nav>
@@ -79,7 +81,7 @@
                         </h1>
                         <p class="create-hero-sub hero-sub-title">
                             Сервис для генерации реалистичных изображений
-                            <span class="text-wrap">в разных стилях на основе текстовых запросов</span>
+                            <span class="desktop-text-wrap">в разных стилях на основе текстовых запросов</span>
                         </p>
                         <div class="create-hero-btn  gradient-hover G-align-center">
                             <button class="btn-main">
@@ -90,17 +92,20 @@
 
                     </div>
                     <div class="creating-hero-video">
-                        <video autoplay muted class="videoPlayer">
+                        <video autoplay muted loop class="videoPlayer">
                             <source src="./assets/video/createFoto.webm" type="video/webm">
                         </video>
                     </div>
-
-                    <div class="create-btn-mobile  gradient-hover G-align-center">
-                        <button class="btn-main">
-                            Сгенерировать
-                        </button>
-                        <a class="icon icon-voice " href=""></a>
+                    <div class="create-hero-btn-cnt">
+                        <div class="create-btn-mobile  gradient-hover G-align-center">
+                            <button class="btn-main">
+                                Сгенерировать
+                            </button>
+                            <a class="icon icon-voice " href=""></a>
+                        </div>
                     </div>
+
+
 
 
                 </div>
@@ -122,26 +127,15 @@
                     <div class="creating-swiper swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="creating-slide">
+                                <div data-id="portrait" class="creating-slide">
                                     <div class="creating-slide-img">
-                                        <img src="assets/images/creatingSlide1.jpg" alt="">
+                                        <img data-id="default" src="assets/images/creatingSlide1.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant2.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant3.jpg" alt="image">
                                     </div>
 
-                                    <div class="creating-slide-more G-align-center">
-                                        <span class="slide-more-text">Ещё вариант</span>
-                                        <div class="slide-more-icon G-flex">
-                                            <img src="assets/images/more.svg" alt="">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="creating-slide">
-                                    <div class="creating-slide-img">
-                                        <img src="assets/images/creatingSlide2.jpg" alt="">
-                                    </div>
                                     <div class="creating-slide-more G-align-center">
                                         <span class="slide-more-text">Ещё вариант</span>
                                         <div class="slide-more-icon G-flex">
@@ -152,23 +146,14 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="creating-slide">
+                                <div data-id="house" class="creating-slide">
                                     <div class="creating-slide-img">
-                                        <img src="assets/images/creatingSlide4.jpg" alt="">
-                                    </div>
-                                    <div class="creating-slide-more G-align-center">
-                                        <span class="slide-more-text">Ещё вариант</span>
-                                        <div class="slide-more-icon G-flex">
-                                            <img src="assets/images/more.svg" alt="">
-                                        </div>
-                                    </div>
+                                        <img data-id="default" src="assets/images/creatingSlide2.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant8.jpg" alt="">
 
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="creating-slide">
-                                    <div class="creating-slide-img">
-                                        <img src="assets/images/creatingSlide5.jpg" alt="">
                                     </div>
                                     <div class="creating-slide-more G-align-center">
                                         <span class="slide-more-text">Ещё вариант</span>
@@ -180,9 +165,219 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="creating-slide">
+                                <div data-id="planets" class="creating-slide">
                                     <div class="creating-slide-img">
-                                        <img src="assets/images/creatingSlide6.jpg" alt="">
+                                        <img data-id="default" src="assets/images/creatingSlide4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant9.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant10.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant11.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant12.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="cheesecake" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant13.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant14.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant15.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant16.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="man" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant17.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant18.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant19.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant20.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="raccoon" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant21.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant22.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant23.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant24.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="car" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide8.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant25.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant26.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant27.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant28.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div data-id="portrait" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide1.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant2.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant3.jpg" alt="image">
+                                    </div>
+
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="house" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide2.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant8.jpg" alt="">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="planets" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant9.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant10.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant11.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant12.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="cheesecake" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant13.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant14.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant15.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant16.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="man" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant17.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant18.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant19.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant20.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="raccoon" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant21.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant22.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant23.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant24.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="car" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide8.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant25.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant26.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant27.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant28.jpg" alt="image">
                                     </div>
                                     <div class="creating-slide-more G-align-center">
                                         <span class="slide-more-text">Ещё вариант</span>
@@ -205,7 +400,373 @@
 
                     </div>
 
+                    <div class="swiper-slide-texts">
+                        <div data-id="portrait" class="swiper-slide-text">
+                            <p>Портрет красивой девушки с ярким макияжем,
+                                <span class="text-wrap">фиолетовые оттенки, реализм</span></p>
+                        </div>
+                        <div data-id="house" class="swiper-slide-text">
+                            <p>
+                                Домик в волшебном лесу на рассвете,
+                                <span class="text-wrap">сказочный стиль</span>
+                            </p>
+                        </div>
+                        <div data-id="planets" class="swiper-slide-text">
+                            <p>
+                                Планеты в космосе, много звёзд, фиолетовые
+                                <span class="text-wrap">и синие оттенки, сияние, 3D</span>
+                            </p>
+                        </div>
+                        <div data-id="cheesecake" class="swiper-slide-text">
+                            <p>
+                                Черничный чизкейк на синей керамической тарелке,
+                                <span class="text-wrap">деревянный стол, тёмный фон</span>
+                            </p>
+
+                        </div>
+                        <div data-id="man" class="swiper-slide-text">
+                            <p>
+                                Красивый мужчина на фоне ночного города,
+                                <span class="text-wrap">в стиле киберпанк</span>
+                            </p>
+                        </div>
+                        <div data-id="raccoon" class="swiper-slide-text">
+                            <p>
+                                Енот на фоне природы, крупный план,
+                                <span class="text-wrap">зелень, реализм,</span>
+                            </p>
+                        </div>
+                        <div data-id="car" class="swiper-slide-text">
+                            <p>
+                                Стильная дорогая машина фиолетового цвета
+                                <span class="text-wrap">стоит на дороге, глянец, 3D</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+
                 </div>
+
+                <div class="creating-mobile-slider block-cnt ">
+                    <div class="creating-mobile-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div data-id="portrait" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide1.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant2.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant3.jpg" alt="image">
+                                    </div>
+
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="house" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide2.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant8.jpg" alt="">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="planets" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant9.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant10.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant11.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant12.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="cheesecake" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant13.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant14.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant15.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant16.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="man" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant17.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant18.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant19.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant20.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="raccoon" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant21.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant22.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant23.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant24.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="car" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide8.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant25.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant26.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant27.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant28.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div data-id="portrait" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide1.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant2.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant3.jpg" alt="image">
+                                    </div>
+
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="house" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide2.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant8.jpg" alt="">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="planets" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide4.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant9.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant10.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant11.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant12.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="cheesecake" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide5.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant13.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant14.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant15.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant16.jpg" alt="image">
+
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="man" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide6.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant17.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant18.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant19.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant20.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="raccoon" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide7.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant21.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant22.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant23.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant24.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-id="car" class="creating-slide">
+                                    <div class="creating-slide-img">
+                                        <img data-id="default" src="assets/images/creatingSlide8.jpg" alt="">
+                                        <img src="assets/images/creatingSlideVariant25.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant26.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant27.jpg" alt="image">
+                                        <img src="assets/images/creatingSlideVariant28.jpg" alt="image">
+                                    </div>
+                                    <div class="creating-slide-more G-align-center">
+                                        <span class="slide-more-text">Ещё вариант</span>
+                                        <div class="slide-more-icon G-flex">
+                                            <img src="assets/images/more.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide-texts">
+                        <div data-id="portrait" class="swiper-slide-text">
+                            <p>Портрет красивой девушки с ярким макияжем,
+                                <span class="text-wrap">фиолетовые оттенки, реализм</span></p>
+                        </div>
+                        <div data-id="house" class="swiper-slide-text">
+                            <p>
+                                Домик в волшебном лесу на рассвете,
+                                <span class="text-wrap">сказочный стиль</span>
+                            </p>
+                        </div>
+                        <div data-id="planets" class="swiper-slide-text">
+                            <p>
+                                Планеты в космосе, много звёзд, фиолетовые
+                                <span class="text-wrap">и синие оттенки, сияние, 3D</span>
+                            </p>
+                        </div>
+                        <div data-id="cheesecake" class="swiper-slide-text">
+                            <p>
+                                Черничный чизкейк на синей керамической тарелке,
+                                <span class="text-wrap">деревянный стол, тёмный фон</span>
+                            </p>
+
+                        </div>
+                        <div data-id="man" class="swiper-slide-text">
+                            <p>
+                                Красивый мужчина на фоне ночного города,
+                                <span class="text-wrap">в стиле киберпанк</span>
+                            </p>
+                        </div>
+                        <div data-id="raccoon" class="swiper-slide-text">
+                            <p>
+                                Енот на фоне природы, крупный план,
+                                <span class="text-wrap">зелень, реализм,</span>
+                            </p>
+                        </div>
+                        <div data-id="car" class="swiper-slide-text">
+                            <p>
+                                Стильная дорогая машина фиолетового цвета
+                                <span class="text-wrap">стоит на дороге, глянец, 3D</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="creating-pagination swiper-pagination"></div>
+
+
+                </div>
+
             </div>
 
         </section>
@@ -446,11 +1007,14 @@
                     </div>
                 </div>
             </div>
-            <div class="create-peculiarities-btn  gradient-hover G-align-center">
-                <button class="btn-main">
-                    Начать сейчас
-                </button>
-                <a class="icon icon-voice " href=""></a>
+            <div class="create-btn-cnt G-center">
+                <div class="create-peculiarities-btn  gradient-hover G-align-center">
+                    <button class="btn-main">
+                        Начать сейчас
+                    </button>
+                    <a class="icon icon-voice " href=""></a>
+                </div>
+
             </div>
 
 
@@ -544,7 +1108,7 @@
 
                         </div>
                         <div class="possibilities-column  G-justify-end">
-                            <div class="possibilities-item possibilities-average-item">
+                            <div class="possibilities-center-slide-item possibilities-average-item">
                                 <div class="possibilities-item-header">
                                     <div class="possibilities-item-picture possibilities-slider-picture G-flex">
                                         <img src="assets/images/afterImage3.jpg" alt="image">
@@ -614,20 +1178,22 @@
                         </div>
 
                     </div>
-
                     <div class="possibilities-slider-block">
                         <div class="possibilities-slider swiper ">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities.png" alt="image">
+                                    <div class="possibilities-center-slide-item ">
+                                        <div class="possibilities-item-header">
+                                            <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage4.png" alt="image">
+                                                <img src="assets/images/beforeImage4.png" alt="image">
+                                            </div>
                                         </div>
                                         <div class="possibilities-item-info">
-                                            <h4 class="possibilities-item-title">Генерация изображений</h4>
-                                            <p class="possibilities-item-sub">Создавайте уникальные изображения в нужном
-                                                стиле
-                                                <span class="desktop-text-wrap">за считанные секунды по любому запросу</span>
+                                            <h4 class="possibilities-item-title">Удаление и замена фона</h4>
+                                            <p class="possibilities-item-sub">
+                                                Удалите фон с изображения
+                                                или замените его другой
                                             </p>
                                         </div>
                                     </div>
@@ -663,21 +1229,23 @@
                                     </div>
 
                                 </div>
-
                                 <div class="swiper-slide">
                                     <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities4.png" alt="image">
+                                        <div class="possibilities-item-header">
+                                            <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage.png" alt="image">
+                                                <img src="assets/images/beforeImage.png" alt="image">
+                                            </div>
                                         </div>
                                         <div class="possibilities-item-info">
                                             <h4 class="possibilities-item-title">Улучшение качества</h4>
                                             <p class="possibilities-item-sub">
                                                 Повышайте резкость
-                                                <span class="desktop-text-wrap">и четкость <span
-                                                        class="mobile-text-wrap">изображений</span></span>
+                                                <span class="desktop-text-wrap">и четкость изображений</span>
                                             </p>
                                         </div>
                                     </div>
+
 
                                 </div>
                                 <div class="swiper-slide">
@@ -697,9 +1265,12 @@
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities6.jpg" alt="image">
+                                    <div class="possibilities-center-slide-item  possibilities-average-item">
+                                        <div class="possibilities-item-header">
+                                            <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage3.jpg" alt="image">
+                                                <img src="assets/images/beforeImage3.jpg" alt="image">
+                                            </div>
                                         </div>
                                         <div class="possibilities-item-info">
                                             <h4 class="possibilities-item-title">Дорисовка фото и изображений</h4>
@@ -710,21 +1281,26 @@
                                         </div>
                                     </div>
 
+
+
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="possibilities-item ">
-                                        <div class="possibilities-item-picture G-flex">
-                                            <img src="assets/images/possibilities7.png" alt="image">
+                                        <div class="possibilities-item-header">
+                                            <div class="possibilities-item-picture possibilities-slider-picture G-flex">
+                                                <img src="assets/images/afterImage2.jpg" alt="image">
+                                                <img src="assets/images/beforeImage2.png" alt="image">
+                                            </div>
                                         </div>
                                         <div class="possibilities-item-info">
                                             <h4 class="possibilities-item-title">Замена лица на фото</h4>
                                             <p class="possibilities-item-sub">
                                                 Меняйте лица на фото с высоким уровнем точности и естественности
-                                                <span class="text-wrap"> с помощью современных технологий <span
-                                                        class="desktop-text">обработки изображений</span></span>
+                                                <span class="desktop-text-wrap"> с помощью современных технологий <span class="text-none">обработки изображений</span></span>
                                             </p>
                                         </div>
                                     </div>
+
 
                                 </div>
                                 <div class="swiper-slide">
@@ -741,7 +1317,6 @@
                                     </div>
 
                                 </div>
-
                                 <div class="swiper-slide">
                                     <div class="possibilities-item  ">
                                         <div class="possibilities-item-picture G-flex">
@@ -756,7 +1331,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="possibilities-pagination swiper-pagination"></div>
 
@@ -764,13 +1338,16 @@
                     </div>
 
 
-                    <div class="possibilities-btn gradient-hover G-align-center">
-                        <button class="btn-main">
-                            Попробовать сейчас
-                        </button>
-                        <a class="icon icon-voice " href=""></a>
-                    </div>
 
+                    <div class="possibilities-btn-cnt G-center">
+                        <div class="possibilities-btn gradient-hover G-align-center">
+                            <button class="btn-main">
+                                Попробовать сейчас
+                            </button>
+                            <a class="icon icon-voice " href=""></a>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
@@ -1266,7 +1843,8 @@
 
                                             </div>
                                             <div class="reviews-item-text">
-                                                Я веду блог о путешествиях, и эта нейросеть помогла мне создать уникальные изображения для моих постов. Я могу генерировать картинки,
+                                                Я веду блог о путешествиях, и эта нейросеть помогла мне создать
+                                                уникальные изображения для моих постов. Я могу генерировать картинки,
                                                 которые отражают атмосферу мест, которые я посещаю.
                                             </div>
                                         </div>

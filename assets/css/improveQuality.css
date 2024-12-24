@@ -13,12 +13,16 @@
     top: -100px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 160%;
     z-index: 1;
     background-image: url('../images/improveHeroBg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.improve-hero-btn {
+    margin-top: 32px;
 }
 
 .improve-hero-mockup {
@@ -38,6 +42,39 @@
 .improve-hero-body {
     position: relative;
     z-index: 3;
+    padding-top: 80px;
+}
+
+.improve-hero-style {
+    width: 320px;
+    height: 380px;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat;
+    z-index: 3;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
+
+}
+
+
+.improve-mockup-header {
+    margin-top: 5px;
+}
+
+.improve-mockup-bg {
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    background: rgba(23, 23, 23, 1);
+    width: 320px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 70px 60px 0 0;
 }
 
 .improve-hero-mockup {
@@ -46,20 +83,62 @@
     top: -100px;
 }
 
+.improve-style-items {
+    padding-top: 30px;
+}
+
 .improve-hero-card {
     position: relative;
     border-radius: 16px;
-    animation: scroll-left 20s linear infinite;
+    max-width: 256px;
+    width: 100%;
+    height: 256px;
 
 }
 
+.improve-card-name p {
+    transition: opacity 0.3s ease;
+}
+
+.improve-card-name p.hidden {
+    opacity: 0;
+}
+
+.improve-mockup-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--white);
+    margin-left: 36px;
+}
+
+.improve-hero-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(105.61deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: 1;
+    transition: .3s;
+}
+
+.swiper-slide-active .improve-hero-card::before {
+    background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
+}
+
+.swiper-slide-prev .improve-hero-card::before {
+    background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
+}
 
 .improve-hero-cards {
     gap: 12px;
     /*overflow: auto;*/
-
 }
-
 
 @keyframes scroll-left {
     0% {
@@ -95,19 +174,6 @@
 
 }
 
-.improve-hero-card {
-    min-width: 256px;
-    height: 256px;
-}
-
-.improve-card-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-}
-
-
-
 
 .improve-peculiarities-mockup {
     max-width: 800px;
@@ -127,7 +193,8 @@
 
 
 }
-.improve-peculiarities-icon{
+
+.improve-peculiarities-icon {
     width: 60px;
     height: 60px;
     border-radius: 12px;
@@ -136,6 +203,7 @@
     padding: 10px;
 
 }
+
 .improve-peculiarities-icon::before {
     content: "";
     position: absolute;
@@ -183,14 +251,17 @@
     z-index: 1;
     transition: .3s;
 }
-.improve-peculiarities-description{
+
+.improve-peculiarities-description {
     margin-top: 20px;
 }
-.improve-tools-main{
+
+.improve-tools-main {
     gap: 20px;
     width: 100%;
 }
-.improve-descr-title{
+
+.improve-descr-title {
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -223,10 +294,11 @@
 
 @media (max-width: 576px) {
 
-    .improve-peculiarities-description{
+    .improve-peculiarities-description {
         margin-top: 16px;
     }
-    .improve-peculiarities-icon{
+
+    .improve-peculiarities-icon {
         width: 48px;
         height: 48px;
         border-radius: 10px;
@@ -235,12 +307,64 @@
         justify-content: center;
 
     }
-    .improve-peculiarities-cnt{
+
+    .improve-hero-card {
+        position: relative;
+        border-radius: 16px;
+        max-width: 198px;
+        width: 100%;
+        height: 198px;
+
+    }
+
+    .improve-peculiarities-cnt {
         margin-top: -40px;
     }
-    .improve-descr-title{
+    .improve-hero-slider {
+        margin: 140px auto 0;
+
+    }
+    .improve-descr-title {
         font-size: 16px;
         font-weight: 600;
         line-height: 20px;
     }
+
+    .improve-hero-style {
+        width: 248px;
+        height: 304px;
+        position: absolute;
+        left: 50%;
+        top: 32%;
+        transform: translate(-50%, -50%);
+        background-size: cover;
+        background-position: unset;
+        background-repeat: no-repeat;
+        z-index: 3;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 35%);
+
+    }
+
+    .improve-mockup-bg {
+        width: 230px;
+        height: 280px;
+    }
+
+    .improve-mockup-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-left: 16px;
+
+    }
+    .improve-hero-section {
+        position: relative;
+        min-height: 556px;
+        margin-top: 84px;
+
+    }
+    .improve-hero-body {
+        padding-top: 60px;
+    }
+
 }
