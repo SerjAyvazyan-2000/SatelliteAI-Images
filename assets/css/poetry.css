@@ -1,0 +1,417 @@
+
+.icon-hero-service {
+    background: rgba(255, 255, 255, 1);
+    font-size: 24px;
+}
+
+.poetry-hero-section {
+    margin-top: 116px;
+    min-height: 900px;
+    position: relative;
+    width: 100%;
+}
+
+.poetry-hero-body {
+    padding: 80px 0 0;
+    position: relative;
+    z-index: 5;
+}
+
+.poetry-hero-titles {
+    gap: 15px;
+}
+
+.poetry-hero-cnt {
+    margin-top: 76px;
+
+}
+
+.hero-services {
+    flex-wrap: wrap;
+    margin-top: 37px;
+    max-width: 700px;
+    gap: 20px;
+}
+
+.hero-service-item {
+    gap: 21px;
+    flex: 0 0 300px;
+}
+
+.hero-cnt-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.hero-service-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.31px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.hero-service-icon {
+    flex: 0 0 43px;
+    height: 43px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8.89px;
+
+}
+
+.hero-btn {
+    margin-top: 28px;
+}
+
+.hero-kinetic-image {
+    width: 700px;
+    height: 782px;
+}
+
+.poetry-hero-images {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero-main-image-cnt {
+    position: absolute;
+    top: 184px;
+    width: 511px;
+    height: 782px;
+    right: 100px;
+    z-index: 2;
+}
+
+.hero-main-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+}
+
+.kinetic-fon {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+}
+
+.kinetic-blur {
+    position: absolute;
+    right: 0;
+}
+
+.hero-paper--two {
+    position: absolute;
+    left: -70px;
+    z-index: 1;
+    bottom: 330px;
+    max-width: 300px;
+    transform: scaleX(-1);
+
+}
+
+.hero-paper--one {
+    transform: scaleX(-1);
+    position: absolute;
+    left: -70px;
+    top: 100px;
+    z-index: 2;
+}
+
+.hero-paper--tree {
+    position: absolute;
+    right: -50px;
+    z-index: 1;
+    bottom: 150px;
+}
+
+.hero-paper--for {
+    position: absolute;
+    right: -70px;
+    top: 140px;
+}
+
+.hero-parallax-image {
+    position: absolute;
+
+}
+
+.parallax-image--one {
+    top: 180px;
+    left: -250px;
+    z-index: 1;
+}
+
+.parallax-image--tree {
+    top: -120px;
+    left: 0;
+    z-index: 2;
+}
+
+.parallax-blur-one {
+    top: -120px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.parallax-image--two {
+    left: -120px;
+    bottom: -200px;
+    z-index: 1;
+
+}
+
+.poetry-blur--two {
+    position: absolute;
+    bottom: -200px;
+    width: 600px;
+    left: -500px;
+    height: 400px;
+    z-index: 2;
+}
+
+.poetry-hero-blur {
+    position: absolute;
+    bottom: -300px;
+    right: 0;
+    width: 1500px;
+    height: 511px;
+    z-index: 3;
+    background-size: cover;
+}
+
+.poetry-hero-btn{
+    margin-top: 84px;
+    max-width: 180px;
+    width: 100%;
+    height: 52px;
+}
+
+.solution-item-number {
+    font-size: 33.91px;
+    font-weight: 700;
+    line-height: 38.66px;
+    color: rgba(171, 91, 249, 1);
+
+}
+
+.solution-item-titles {
+    gap: 14px;
+}
+
+.solution-item-header {
+    padding: 60px 40px 0 60px;
+
+}
+
+.solution-item-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25.08px;
+    color: rgba(255, 255, 255, 1);
+
+
+}
+
+.solution-item-text {
+    margin-top: 23px;
+}
+
+.solution-item-text p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23.4px;
+    color: rgba(255, 255, 255, 1);
+    opacity: .7;
+}
+
+.solution-one-picture {
+    margin-top: -120px;
+}
+
+
+.effective-solution-item {
+    position: relative;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    min-height: 460px;
+    overflow: hidden;
+
+
+}
+
+.solution-item--one {
+    max-width: 588px;
+    width: 100%;
+    background-image: url("../images/transformed16.png");
+}
+.solution-item--two {
+    max-width: 571px;
+    width: 100%;
+    background-image: url("../images/transformed17.png");
+
+}
+
+
+.effective-solution-cnt {
+    gap: 35px;
+    position: relative;
+}
+.effective-solution{
+    position: relative;
+}
+
+
+.effective-bottom-title {
+    text-align: center;
+}
+
+.poetry-hero-mobile {
+    display: none;
+}
+.effective-solution-blur{
+    position: absolute;
+    right: 0;
+    bottom: -400px;
+}
+.possibilities-cnt {
+    display: none;
+}
+
+.possibilities-cnt.active {
+    display: flex;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+    .solution-one-picture {
+        margin-top: -30px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .effective-solution-cnt {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .effective-solution-item {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .effective-bottom-title{
+        text-align: start;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .poetry-hero-images {
+        display: none;
+    }
+
+    .effective-solution {
+        margin-top: 90px;
+    }
+    .effective-solution-titles{
+        align-items: stretch;
+    }
+
+
+    .poetry-hero-cnt {
+        margin-top: 76px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .parallax-image--tree {
+        display: none;
+    }
+
+    .poetry-hero-mobile {
+        display: block;
+        position: absolute;
+        top: 100px;
+        width: 120%;
+        left: -20px;
+    }
+
+    .poetry-hero-mobile img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .poetry-hero-body {
+        padding: 60px 0 0;
+    }
+
+    .poetry-hero-section {
+        margin-top: 84px;
+    }
+
+    .parallax-blur-one {
+        display: none;
+    }
+
+    .poetry-hero-titles {
+        align-items: stretch;
+    }
+
+    .poetry-hero-texts {
+        margin-top: 500px;
+        z-index: 3;
+        position: relative;
+    }
+
+    .hero-cnt-title {
+        max-width: 312px;
+    }
+
+    .hero-services {
+        margin-top: 50px;
+    }
+
+    .hero-btn {
+        margin-top: 50px;
+    }
+    .solution-item-header {
+        padding: 30px 18px 0 30px;
+
+    }
+    .effective-solution-blur{
+        display: none;
+    }
+    .section{
+        margin-top: 90px;
+    }
+    .advantages-desktop-stars{
+        display: none;
+    }
+    .solution-item--one {
+        background-image: url("../images/transformed16Mobile.png");
+    }
+    .solution-item--two {
+        background-image: url("../images/transformed17Mobile.png");
+
+    }
+}
+
+@media (max-width: 400px) {
+    .poetry-hero-texts {
+        margin-top: 550px;
+
+    }
+
+}

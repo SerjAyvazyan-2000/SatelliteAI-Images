@@ -1,0 +1,415 @@
+
+.rewriting-hero-video {
+    position: relative;
+    width: 754px;
+    height: 614px;
+}
+
+.rewriting-hero-body {
+    padding-top: 123px;
+}
+
+.rewriting-hero-section {
+    margin-top: 116px;
+    position: relative;
+}
+
+.rewriting-hero-section::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/rewritingDecor.png');
+    top: -130px;
+    width: 100%;
+    height: 130%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.rewriting-bottom-title {
+    margin-top: 15px;
+}
+
+.hero-cnt-title {
+    margin-top: 33px;
+}
+
+.rewriting-hero-services {
+    gap: 26px;
+    margin-top: 41px;
+}
+
+.rewriting-service-item {
+    gap: 20px;
+}
+
+.rewriting-hero-btn {
+    max-width: 180px;
+    width: 100%;
+    height: 52px;
+    margin-top: 51px;
+}
+
+.rewriting-hero-parallax {
+    position: absolute;
+    z-index: 2;
+}
+
+.rewriting-parallax--one {
+    left: 0;
+    top: -120px;
+}
+
+.rewriting-parallax--two {
+    left: 0;
+    top: -120px;
+}
+
+.rewriting-hero-parallax {
+    right: 0;
+    top: -120px;
+}
+
+.rewriting-shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.rewriting-parallax--blur {
+    left: 300px;
+    top: 0;
+}
+
+.rewriting-solution {
+    margin-top: 70px;
+    position: relative;
+}
+
+
+
+
+
+.rewriting-possibilities-item {
+    background: rgba(18, 18, 18, 1);
+    position: relative;
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    max-width: 384px;
+    overflow: hidden;
+    min-height: 260px;
+
+}
+.rewriting-possibilities-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 3px;
+    background: linear-gradient(134.57deg, #6B51F8 18.8%, #19181B 81.2%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    transition: .3s;
+}
+
+.rewriting-big-item {
+    min-height: 338px;
+    margin-top: -100px;
+}
+
+.rewriting-possibilities-header {
+    padding: 40px 46px 40px 60px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.rewriting-possibilities-items {
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.rewriting-img-possibilities-item {
+    min-height: 260px;
+    border-radius: 40px;
+}
+
+.rewriting-possibilities-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 40px;
+    padding: 1px;
+    background: linear-gradient(134.57deg, #6B51F8 18.8%, #19181B 81.2%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    box-shadow: 0px 0px 16px 0px rgba(99, 86, 254, 0.08);
+    transition: .3s;
+    z-index: -1;
+}
+
+.rewriting-possibilities-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rewriting-possibilities-blur {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.rewriting-possibilities-blur--two {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+
+.rewriting-solution-stars {
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+.rewriting-advantages-section {
+    position: relative;
+}
+
+.rewriting-advantages-section::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/rewritingAdvantagesDecor.png');
+    top: 0;
+    width: 50%;
+    height: 120%;
+    right: 0;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.rewriting-advantages-section::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/rewritingAdvantagesDecor.png');
+    top: 0;
+    width: 40%;
+    left: 0;
+    height: 120%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.rewriting-main-image {
+
+}
+
+.rewriting-kinetic-image {
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+}
+
+.rewriting-mobile-titles {
+    display: none;
+}
+.rewriting-hero-titles{
+    position: relative;
+    z-index: 3;
+}
+.solution-item--tree{
+    max-width: 588px;
+    width: 100%;
+    background-image: url('../images/transformed20.png');
+
+}
+.rewriting-solution-item {
+    max-width: 571px;
+    min-height: 460px;
+    width: 100%;
+    border-radius: 40px;
+    background-image: url('../images/transformed4.png');
+    position: relative;
+
+}
+
+
+
+.mobile-title{
+    display: none;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+    .rewriting-hero-video {
+        width: 554px;
+    }
+    .rewriting-possibilities-header{
+        padding: 30px;
+    }
+    .rewriting-possibilities-items{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .rewriting-hero-body {
+        flex-direction: column;
+    }
+
+    .rewriting-mobile-titles {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rewriting-solution-item {
+        max-width: 100%;
+
+    }
+    .solution-item--tree{
+        max-width: 100%;
+    }
+
+    .rewriting-hero-video {
+        width: 100%;
+        margin-top: 65px;
+    }
+
+    .rewriting-hero-parallax {
+        display: none;
+    }
+
+    .rewriting-desktop-titles {
+        display: none;
+    }
+    .rewriting-possibilities-img{
+        width: 100%;
+    }
+    .rewriting-possibilities-img img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .rewriting-hero-section::after {
+        display: none;
+    }
+    .rewriting-possibilities-items{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .rewriting-possibilities-item{
+        max-width: 100%;
+    }
+    .rewriting-big-item{
+        margin-top: 0;
+    }
+    .rewriting-hero-video::after {
+        position: absolute;
+        content: '';
+        background-image: url('../images/rewritingDecorMobile.png');
+        top: -100px;
+        height: 150%;
+        width: 120%;
+        left: -20px;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .rewriting-hero-body {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .rewriting-hero-video .videoPlayer{
+        max-width: 495px;
+        width: 100%;
+        height: 296px;
+    }
+    .mobile-title{
+        display: block;
+    }
+    .desktop-title{
+        display: none;
+    }
+    .solution-item--tree{
+        background-image: url('../images/transformed20Mobile.png');
+        min-height: 341px;
+
+    }
+    .rewriting-solution-item {
+        background-image: url('../images/transformed4Mobile.png');
+        min-height: 305px;
+
+    }
+
+    .hero-cnt-title{
+        margin-top: 50px;
+    }
+    .rewriting-hero-video{
+        width: 100%;
+        height: 400px;
+    }
+    .rewriting-hero-video::after {
+        height: 180%;
+    }
+    .rewriting-hero-section {
+        margin-top: 84px;
+    }
+    .rewriting-advantages-section::after {
+        height: 70%;
+    }
+
+    .rewriting-advantages-section::before {
+        height: 70%;
+
+    }
+    .rewriting-shadow {
+        bottom: 20px;
+    }
+    .rewriting-hero-services{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .rewriting-hero-video::after {
+        background-image: url('../images/rewritingDecorMobile.png');
+        top: -100px;
+        height: 160%;
+        width: 120%;
+        left: -20px;
+    }
+    .rewriting-shadow {
+        left: -20px;
+        bottom: 120px;
+    }
+    .rewriting-hero-video{
+        height: 296px;
+    }
+    .rewriting-solution{
+        margin-top: 90px;
+    }
+    .rewriting-hero-video .videoPlayer{
+        max-width:100%;
+    }
+    .rewriting-hero-services{
+        gap: 20px;
+    }
+}

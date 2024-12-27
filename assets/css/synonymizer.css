@@ -1,0 +1,333 @@
+
+.synonymizer-hero-section {
+    position: relative;
+}
+
+
+.synonymizer-hero-body {
+    padding-top: 307px;
+}
+
+.synonymizer-hero-decor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+}
+
+.synonymizer-hero-animation {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+
+.synonymizer-service-item {
+    flex: 0 0 300px;
+    gap: 21px;
+}
+
+.synonymizer-hero-services {
+    max-width: 700px;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    gap: 20px;
+}
+
+.synonymizer-solution {
+    margin-top: 210px;
+    position: relative;
+}
+
+.synonymizer-solution::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/synonymizerSolutionDecor.png');
+    width: 100%;
+    height: 520px;
+    bottom: -100px;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.synonymizer-stars-right {
+    top: 100px;
+    right: 50px;
+    position: absolute;
+}
+
+.synonymizer-stars-left {
+    top: 100px;
+    left: 50px;
+    position: absolute;
+}
+
+.synonymizer-stars-left img {
+    mix-blend-mode: color-dodge;
+}
+
+.synonymizer-stars-right img {
+    mix-blend-mode: color-dodge;
+
+}
+
+.synonymizer-big-item {
+    max-width: 708px;
+    width: 100%;
+    height: 724px;
+    border-radius: 40px;
+    background-image: url('../images/transformed8.png');
+}
+
+.synonymizer-small-item {
+    max-width: 451px;
+    width: 100%;
+    height: 381px;
+    margin-top: 97px;
+    border-radius: 40px;
+}
+
+.synonymizer-average-item {
+    max-width: 565px;
+    min-height: 308px;
+    width: 100%;
+    position: absolute;
+    right: 50px;
+    border-radius: 40px;
+    top: 513px;
+    background-image: url('../images/transformed10.png');
+
+
+}
+
+.synonymizer-item-text p {
+    max-width: 316px;
+}
+
+.translation-text {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    min-width: 114px;
+    height: 41px;
+
+}
+
+.solution-translation {
+    gap: 5px;
+}
+
+.translation-text::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 1px;
+    background: linear-gradient(134.57deg, #6B51F8 18.8%, #19181B 81.2%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: 1;
+    transition: .3s;
+    left: 0;
+    top: 0;
+}
+
+.synonymizer-possibilities-blur {
+    position: absolute;
+    bottom: -300px;
+    right: -200px;
+    z-index: -1;
+}
+
+.synonymizer-advantages-section {
+    position: relative;
+}
+
+.rewriting-synonymizer-blur {
+    position: absolute;
+    left: -100px;
+    bottom: -300px;
+}
+
+
+.synonymizer-animation {
+    position: absolute;
+    left: 0;
+    top: 300px;
+}
+.synonymizer-cnt-title{
+    text-align: center;
+}
+.synonymizer-info {
+    max-width: 403px;
+}
+
+.synonymizer-hero-parallax {
+    position: absolute;
+}
+
+.synonymizer-hero-parallax--one {
+    top: 220px;
+    right: 0;
+}
+
+.synonymizer-hero-parallax--two {
+    top: -200px;
+    right: -250px;
+}
+
+.synonymizer-hero-parallax--tree {
+    top: 400px;
+    right: 0;
+}
+
+.synonymizer-mobile-titles {
+    display: none;
+}
+
+.synonymizer-solution-cnt {
+    position: relative;
+    gap: 35px;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+
+    .synonymizer-solution-cnt {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .synonymizer-hero-decor {
+        display: none;
+    }
+    .synonymizer-possibilities-blur{
+        display: none;
+    }
+
+    .synonymizer-hero-section::before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/synonymizerDecorMobile.png');
+        top: 0;
+        width: 100%;
+        height: 140%;
+        right: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .synonymizer-animation{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .synonymizer-average-item{
+        position: initial;
+        max-width: 100%;
+        background-image: url('../images/transformed10Mobile.png');
+        min-height: 373px;
+
+    }
+    .synonymizer-solution-cnt {
+        gap: 10px;
+    }
+
+    .synonymizer-small-item{
+        margin-top: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .synonymizer-stars-left {
+        display: none;
+    }
+
+    .synonymizer-hero-section::before {
+        height: 90%;
+    }
+    .synonymizer-big-item {
+        height: 393px;
+        border-radius: 40px;
+        background-image: url('../images/transformed8Mobile.png');
+    }
+    .synonymizer-mobile-titles {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .synonymizer-hero-services {
+        margin-top: 50px;
+        justify-content: stretch;
+    }
+
+    .synonymizer-desktop-titles {
+        display: none;
+    }
+
+    .synonymizer-solution {
+        margin-top: 90px;
+    }
+
+    .synonymizer-hero-titles {
+        align-items: stretch;
+    }
+    .synonymizer-solution::before {
+        background-image: url('../images/synonymizerBlurMobile.png');
+        width: 100%;
+        height: 100%;
+        top: -600px;
+
+    }
+    .synonymizer-advantages-section::after{
+        position: absolute;
+        content: '';
+        background-image: url('../images/rewritingAdvantagesDecor.png');
+        top: 0;
+        width: 100%;
+        height: 70%;
+        right: 0;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    .rewriting-synonymizer-blur{
+        display: none;
+    }
+    .solution-translation{
+        display: none;
+    }
+    .synonymizer-hero-body {
+        padding-top: 144px;
+    }
+
+    .synonymizer-stars-right {
+        top: -60px;
+        right: 0;
+
+    }
+
+
+    .synonymizer-cnt-title {
+        margin-top: 370px;
+        text-align: inherit;
+    }
+
+
+}
+

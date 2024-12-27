@@ -1,0 +1,476 @@
+
+.presentation-hero-section {
+    margin-top: 116px;
+    position: relative;
+}
+
+.presentation-hero-section::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/presentationDecor.png');
+    top: -140px;
+    width: 100%;
+    height: 180%;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.presentation-hero-body {
+    padding-top: 80px;
+}
+
+.presentation-hero-cnt {
+    margin-top: 76px;
+}
+
+.presentation-hero-video {
+    max-width: 751px;
+    width: 100%;
+    height: 508px;
+    position: relative;
+}
+
+.presentation-videoPlayer {
+    max-width: 630px;
+    height: 435px;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+}
+
+.presentation-hero-parallax {
+    position: absolute;
+}
+
+.presentation-hero-parallax--one {
+    left: 0;
+    top: -120px;
+}
+
+.presentation-hero-parallax--two {
+    right: 0;
+    top: -50px;
+}
+
+.presentation-hero-parallax--tree {
+    right: 0;
+    top: -120px;
+}
+
+.presentation-hero-parallax--for {
+    right: 0;
+    top: 100px;
+}
+
+.presentation-solution {
+    margin-top: 88px;
+    position: relative;
+
+}
+
+.presentation-solution::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/presentationSolutionDecor.png');
+    width: 800px;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 200px;
+    bottom: 200px;
+    z-index: 1;
+}
+
+.presentation-big-item {
+    max-width: 588px;
+    height: 460px;
+    width: 100%;
+    border-radius: 40px;
+    background-image: url('../images/transformed11.png');
+}
+
+.presentation-average-item {
+    max-width: 571px;
+    height: 418px;
+    width: 100%;
+    border-radius: 40px;
+    background-image: url('../images/transformed12.png');
+
+}
+
+.presentation-item-header {
+    padding: 49px 20px 0 60px;
+}
+
+.presentation-another-item {
+    max-width: 672px;
+    height: 342px;
+    width: 100%;
+    border-radius: 40px;
+    background-image: url('../images/transformed13.png');
+    margin-left: 200px;
+
+}
+
+.presentation-solution-column {
+    margin-top: 35px;
+}
+
+.text-width277 {
+    max-width: 277px;
+}
+
+.presentation-small-item {
+    max-width: 315px;
+    width: 100%;
+    height: 308px;
+    position: absolute;
+    right: 100px;
+    bottom: -100px;
+    border-radius: 40px;
+}
+
+.presentation-small-item-header {
+    padding: 49px 20px 0 45px;
+
+}
+
+.icon-presentation {
+    font-size: 64px;
+    background: linear-gradient(86.94deg, #6356FE 0.62%, #764AEF 30.62%, #8A3EDF 61.67%, #A330CB 99.38%);
+
+}
+
+.icon-presentation-average {
+    background: linear-gradient(86.94deg, #6356FE 0.62%, #764AEF 30.62%, #8A3EDF 61.67%, #A330CB 99.38%);
+    font-size: 30px;
+
+}
+
+.icon-small-average {
+    background: linear-gradient(86.94deg, #6356FE 0.62%, #764AEF 30.62%, #8A3EDF 61.67%, #A330CB 99.38%);
+    font-size: 30px;
+}
+
+.presentation-item-icon {
+    background: rgba(18, 18, 18, 1);
+    box-shadow: 0px 0px 42.8px 0px rgba(99, 86, 254, 0.08);
+    position: absolute;
+
+}
+
+.presentation-big-icon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 26.75px;
+    padding: 1px;
+    background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: 1;
+    transition: .3s;
+    left: 0;
+    top: 0;
+}
+
+.presentation-average-icon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: 1;
+    transition: .3s;
+    left: 0;
+    top: 0;
+}
+
+.presentation-small-icon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    padding: 1px;
+    background: linear-gradient(86.94deg, rgba(99, 86, 254, 0.28) 0.62%, rgba(118, 74, 239, 0.28) 30.62%, rgba(138, 62, 223, 0.28) 61.67%, rgba(163, 48, 203, 0.28) 99.38%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: 1;
+    transition: .3s;
+    left: 0;
+    top: 0;
+}
+
+.presentation-solution-item {
+    position: relative;
+}
+
+.presentation-big-icon {
+    width: 107px;
+    height: 107px;
+    right: -20px;
+    top: 60px;
+    border-radius: 26.75px;
+
+
+}
+
+.presentation-average-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    left: -30px;
+    bottom: 40px;
+
+}
+
+.presentation-small-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    right: -30px;
+    top: 40px;
+}
+
+.presentation-solution-stars {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.presentation-advantages-section {
+    position: relative;
+    margin-top: 282px;
+}
+
+.presentation-advantages-section::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/presentationAdvantagesDecor.png');
+    top: -600px;
+    width: 900px;
+    height: 300%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.presentation-advantages-parallax {
+    position: absolute;
+}
+
+.presentation-advantages-parallax--one {
+    left: -100px;
+    top: -320px;
+    z-index: 1;
+
+}
+
+.presentation-advantages-parallax--two {
+    left: 0;
+    top: -100px;
+    z-index: 1;
+}
+
+.presentation-advantages-parallax--tree {
+    left: 0;
+    top: 50px;
+    z-index: 1;
+
+}
+
+.possibilities-assets {
+    margin-left: 100px;
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+    .hero-services {
+        max-width: 500px;
+    }
+
+    .presentation-hero-cnt {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .presentation-hero-parallax {
+        display: none;
+    }
+    .presentation-another-item {
+
+        margin-left: 0;
+
+    }
+
+    .presentation-average-item {
+        max-width: 100%;
+    }
+
+    .presentation-hero-video {
+        max-width: 600px;
+        height: 400px;
+        margin: 0 auto;
+
+    }
+
+    .presentation-item-header {
+        padding: 30px 20px 0 30px;
+    }
+
+    .rewriting-shadow {
+        display: none;
+    }
+
+    .presentation-small-item {
+        position: inherit;
+        max-width: 100%;
+    }
+
+    .presentation-videoPlayer {
+        max-width: 500px;
+        height: 340px;
+        position: absolute;
+        left: 25px;
+        top: 15px;
+    }
+
+    .presentation-big-item {
+        max-width: 100%;
+
+    }
+
+    .presentation-solution-column {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .presentation-item-icon {
+        display: none;
+    }
+
+    .presentation-another-item {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 678px) {
+    .presentation-hero-video {
+        max-width: 400px;
+        height: 291px;
+    }
+
+    .presentation-videoPlayer {
+        max-width: 300px;
+        height: 250px;
+        position: absolute;
+        left: 25px;
+        top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .presentation-advantages-parallax {
+        display: none;
+    }
+
+
+    .presentation-advantages-section::after {
+        background-image: url(../images/advantagesDecorMobile.png);
+        top: -50px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentation-advantages-section {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 576px) {
+    .presentation-hero-video {
+        max-width: 291px;
+        height: 200px;
+        margin: auto auto 70px 30px;
+
+    }
+
+    .presentation-hero-body {
+        padding-top: 60px;
+        align-items: stretch;
+    }
+
+    .presentation-hero-section::before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/presentationDecorMobile.png');
+        top: 0;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .presentation-hero-cnt {
+        margin-top: 89px;
+    }
+
+    .presentation-hero-section {
+        margin-top: 86px;
+    }
+
+    .presentation-big-item {
+        height: 411px;
+        background-image: url('../images/transformed11Mobile.png');
+    }
+
+    .presentation-average-item {
+        max-width: 571px;
+        height: 343px;
+        width: 100%;
+        border-radius: 40px;
+        background-image: url('../images/transformed12Mobile.png');
+
+    }
+
+    .presentation-another-item {
+        background-image: url('../images/transformed13Mobile.png');
+    }
+
+    .presentation-solution::after {
+        background-image: url('../images/synonymizerBlurMobile.png');
+        width: 100%;
+        height: 100%;
+        top: -600px;
+        left: 0;
+
+    }
+
+
+    .presentation-videoPlayer {
+        max-width: 220px;
+        height: 168px;
+        position: absolute;
+        top: 5px;
+    }
+
+}

@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poetry generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header-body G-justify-between">
+                <a class="header-logo" href="poetryGenerator.html">
+                    <img class="logo-desktop" src="assets/images/logo.svg" alt="">
+                    <img class="logo-mobile" src="assets/images/logoMobile.svg" alt="">
+
+                </a>
+                <div class="menu-bg"></div>
+                <nav class="menu">
+                    <div class="menu-mobile-cnt">
+                        <div class="menu-content-mobile G-flex-column">
+                            <h3 class="menu-mobile-title">Satellite AI</h3>
+                            <p class="menu-mobile-clue">
+                                Универсальная платформа
+                                <span class="text-wrap"> для удаление фона c фото</span>
+                                <span class="text-wrap">в один клик</span>
+                            </p>
+                        </div>
+                        <ul class="menu-list G-flex">
+                            <li class='menu-list-item'>
+                                <a class="menu-list-link G-align-center" href="#possibilities">
+                                    <span>Возможности</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#forWhom">Для кого</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a class="menu-list-link" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="header-mobile-actions ">
+                            <button class="btn-login btn-black ">Вход</button>
+                            <button class="btn-register btn-white  ">Регистрация</button>
+                        </div>
+                    </div>
+
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="header-actions G-align-center">
+                    <button class="btn-login btn-black ">Вход</button>
+                    <button class="btn-register btn-white  ">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+
+        <section class="poetry-hero-section hero-section ">
+            <div class="container">
+                <div class="poetry-hero-body hero-body">
+                    <div class="poetry-hero-titles hero-titles G-column-center">
+                        <h1 class=" hero-top-title top-title gradient-text">online</h1>
+                        <h2 class="hero-bottom-title bottom-title ">Генератор стихов и рифм</h2>
+                    </div>
+                    <div class="poetry-hero-cnt ">
+                        <div class="poetry-hero-texts">
+                            <h3 class="hero-cnt-title">
+                                Нейросеть, которая превращает ваши идеи
+                                <span class="desktop-text-wrap">в красивые строки -
+                                    <span class="mobile-text-wrap">о любви, природе и жизни</span>
+                                </span>
+                            </h3>
+                            <div class="hero-services G-flex">
+                                <div class="hero-service-item G-align-center">
+                                    <div class="hero-service-icon G-center">
+                                        <i class="icon icon-hero-service icon-hero-service1"></i>
+                                    </div>
+                                    <div class="hero-service-text">Уникальный стиль</div>
+                                </div>
+                                <div class="hero-service-item G-align-center">
+                                    <div class="hero-service-icon G-center">
+                                        <i class="icon icon-hero-service icon-hero-service3"></i>
+                                    </div>
+                                    <div class="hero-service-text">Гибкость тематики</div>
+                                </div>
+                                <div class="hero-service-item G-align-center">
+                                    <div class="hero-service-icon G-center">
+                                        <i class="icon icon-hero-service icon-hero-service2"></i>
+                                    </div>
+                                    <div class="hero-service-text">Эксперименты с рифмой</div>
+                                </div>
+
+                                <div class="hero-service-item G-align-center">
+                                    <div class="hero-service-icon G-center">
+                                        <i class="icon icon-hero-service icon-hero-service4"></i>
+                                    </div>
+                                    <div class="hero-service-text">Творческая поддержка</div>
+                                </div>
+                            </div>
+
+                            <button class="poetry-hero-btn btn-gradient">Попробовать</button>
+                        </div>
+
+
+                        <div class="poetry-hero-mobile">
+                            <img src="assets/images/poetryMobile.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="poetry-hero-images">
+                <div style="background-image:url('assets/images/kinetic.png')"
+                     class="hero-kinetic-image G-image G-flex">
+
+                    <div class="kinetic-fon">
+                        <img src="assets/images/kineticFon.png" alt="">
+                    </div>
+                    <div class="kinetic-blur">
+                        <img src="assets/images/kineticBlur.png" alt="">
+
+                    </div>
+                </div>
+
+                <div style="background-image: url('assets/images/heroImage.png')" class="hero-main-image-cnt G-image">
+                    <div class="hero-main-image G-flex">
+                        <img src="assets/images/heroImage.png" alt="">
+                    </div>
+                    <div class="hero-paper hero-paper--one G-flex">
+                        <img src="assets/images/paper1.png" alt="">
+                    </div>
+                    <div class="hero-paper hero-paper--two G-flex">
+                        <img src="assets/images/paper2.png" alt="">
+                    </div>
+                    <div class="hero-paper hero-paper--tree G-flex">
+                        <img src="assets/images/paper3.png" alt="">
+                    </div>
+                    <div class="hero-paper hero-paper--for G-flex">
+                        <img src="assets/images/paper4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="hero-parallax-image parallax-image--one">
+                    <img src="assets/images/parallax1.png" alt="">
+                </div>
+                <div class="hero-parallax-image parallax-image--two">
+                    <img src="assets/images/parallax2.png" alt="">
+                </div>
+
+
+                <div style="background-image: url('assets/images/heroBlur.png')" class="poetry-hero-blur ">
+                </div>
+                <div style="background-image: url('assets/images/heroBlur2.png')" class="poetry-blur--two ">
+
+                </div>
+            </div>
+
+            <div class="hero-parallax-image parallax-image--tree">
+                <img src="assets/images/parallax3.png" alt="">
+            </div>
+
+            <div class="hero-parallax-blur parallax-blur-one">
+                <img src="assets/images/heroBlur3.png" alt="">
+            </div>
+
+        </section>
+
+
+        <section class="effective-solution">
+            <div class="container">
+                <div class="effective-solution-body">
+                    <div class="effective-solution-titles block-titles  G-column-center">
+                        <div class="effective-stars-cnt">
+                            <div class="synonymizer-stars-left">
+                                <img src="assets/images/stars3.png" alt="">
+
+                            </div>
+                        </div>
+                        <h2 class=" top-title gradient-text">Основные возможности</h2>
+                        <h3 class=" effective-bottom-title block-title">Эффективное решение <span class="text-wrap">сложных задач</span>
+                        </h3>
+
+                        <div class="effective-solution-stars">
+                            <div class="synonymizer-stars-right">
+                                <img src="assets/images/stars3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="effective-solution-cnt block-cnt G-flex">
+                        <div class="effective-solution-item solution-item--one G-image">
+                            <div class="solution-item-header">
+                                <div class="solution-item-titles G-align-center">
+                                    <span class="solution-item-number">01</span>
+                                    <p class="solution-item-title">Генератор стихов </p>
+                                </div>
+                                <div class="solution-item-text">
+                                    <p>
+                                        Мгновенное создание выразительных стихотворений
+                                        <span class="desktop-text-wrap">с правильным ритмом, рифмой и настроением.</span>
+                                        Идеи оживают мгновенно!
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="effective-solution-item solution-item--two G-image">
+                            <div class="solution-item-header">
+                                <div class="solution-item-titles G-align-center">
+                                    <span class="solution-item-number">02</span>
+                                    <p class="solution-item-title">Генератор рифм </p>
+                                </div>
+                                <div class="solution-item-text">
+                                    <p>
+                                        Нейросеть находит рифмы,
+                                        <span class="mobile-text-wrap">которые звучат гармонично</span>
+                                        <span class="desktop-text-wrap"> <span class="mobile-text-wrap">и добавляют тексту</span> завершенности.</span>
+                                        Творите без усилий!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="effective-solution-blur">
+                <img src="assets/images/blur2.png" alt="">
+            </div>
+
+        </section>
+
+
+        <section id="forWhom" class="advantages-section section">
+            <div class="container">
+                <div class="advantages-body">
+                    <div class="advantages-titles block-titles  G-column-center">
+                        <h2 class="top-title gradient-text">Преимущества</h2>
+                        <h3 class="effective-bottom-title bottom-title">
+                            Будь на шаг впереди
+                            <span class="text-wrap">с Satellite AI</span>
+                        </h3>
+                        <div class="advantages-desktop-stars  presentation-solution-stars">
+                            <img src="assets/images/stars2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="advantages-swiper swiper block-cnt ">
+                        <div class="advantages-swiper-wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="advantages-item advantages-black-item  advantages-small-item">
+                                    <div class="advantages-item-icon">
+                                        <i class="icon icon-advantages icon-advantages1"></i>
+                                        <h3 class="advantages-item-title">
+                                            Множество тем
+                                            <span class="text-wrap"> на выбор</span>
+
+                                        </h3>
+                                    </div>
+                                    <div class="advantages-item-texts ">
+
+                                        <p class="advantages-item-text">
+                                            От романтики до философии — генератор подстраивается
+                                            под любой запрос
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="advantages-item advantages-black-item  advantages-average-item">
+                                    <div class="advantages-item-icon">
+                                        <i class="icon icon-advantages icon-advantages2"></i>
+
+                                        <h3 class="advantages-item-title">
+                                            Поэзия станет
+                                            <span class="text-wrap">доступна для всех</span>
+                                        </h3>
+                                    </div>
+                                    <div class="advantages-item-texts ">
+                                        <p class="advantages-item-text">
+                                            Не нужен опыт
+                                            <span class="text-wrap"> в писательстве, чтобы </span>
+                                            создавать красивые стихи
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class=" advantages-item advantages-primary-item  advantages-big-item">
+                                    <div class="advantages-item-icon">
+                                        <i class="icon icon-advantages icon-advantages3"></i>
+                                        <h3 class="advantages-item-title">
+                                            Лёгкость
+                                            <span class="text-wrap">использования</span>
+
+                                        </h3>
+                                    </div>
+                                    <div class="advantages-item-texts ">
+                                        <p class="advantages-item-text">
+                                            Просто введи тему или
+                                            <span class="text-wrap">слово — остальное сделает</span>
+                                            генератор
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="advantages-item advantages-black-item  advantages-average-item">
+                                    <div class="advantages-item-icon">
+                                        <i class="icon icon-advantages icon-advantages4"></i>
+                                        <h3 class="advantages-item-title">
+                                            Мгновенное
+                                            <span class="text-wrap">создание стихов</span>
+                                        </h3>
+                                    </div>
+                                    <div class="advantages-item-texts ">
+
+                                        <p class="advantages-item-text">
+                                            Получай готовые
+                                            <span class="text-wrap">стихотворения за секунды — </span>
+                                            быстро и легко
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="advantages-pagination swiper-pagination"></div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="advantages-parallax advantages-parallax--one">
+                <img src="assets/images/advantagesParallax4.png" alt="">
+            </div>
+            <div class="advantages-parallax advantages-blur--two">
+                <img src="assets/images/advantagesBlur2.png" alt="">
+            </div>
+            <div class="advantages-parallax advantages-blur--tree">
+                <img src="assets/images/advantagesBlur.png" alt="">
+            </div>
+
+        </section>
+
+        <section id="possibilities" class="possibilities-section section">
+            <div class="container">
+                <div class="possibilities-body">
+
+                    <div class=" block-titles  G-column-center">
+                        <h2 class="top-title gradient-text ">Возможности</h2>
+                        <h3 class="effective-bottom-title block-title">
+                            Другие функции
+                            <span class="text-wrap">Satellite AI</span>
+                        </h3>
+                    </div>
+
+                    <div class="possibilities-tabs-block">
+                        <div class="possibilities-tabs G-align-center">
+                            <button data-id="presentations" class="possibilities-tab active">Генератор презентаций
+                            </button>
+                            <button data-id="synonymizer" class="possibilities-tab">Синонимайзер</button>
+                            <button data-id="rewrite" class="possibilities-tab">Рерайт текста</button>
+                        </div>
+
+                        <div data-id="presentations" style="background-image: url('assets/images/possibilitiesCnt.png')"
+                             class="possibilities-cnt G-align-center">
+                            <div class="possibilities-info-item">
+                                <h3 class="possibilities-item-title">Генератор презентаций</h3>
+                                <p class="possibilities-item-sub">
+                                    Создание стильных презентаций.
+                                    <span class="text-wrap">Нужна презентация на учёбу или работу?</span>
+                                    Сделай её в пару кликов
+                                </p>
+
+                                <div class="for-whom-block">
+                                    <h4 class="for-whom-title">Для кого:</h4>
+                                    <p class="for-whom-text">
+                                        Творческие люди | Маркетологи | Бизнесмены | Копирайтеры
+                                    </p>
+                                </div>
+
+                                <div class="possibilities-btn-cnt">
+                                    <button class="possibilities-btn btn-gradient G-align-center">
+                                        <span>Перейти</span>
+                                        <i class="icon icon-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div style="background-image: url('assets/images/gifCnt.png')"
+                                 class="possibilities-gif-cnt G-image ">
+                                <div class="possibilities-info-picture">
+                                    <img src="assets/images/gif.gif" alt="">
+                                </div>
+                            </div>
+
+
+                            <div class="possibilities-parallax-image possibilities-parallax--one">
+                                <img src="assets/images/possibilitiesParallax.png" alt="">
+                            </div>
+                            <div class="possibilities-parallax-image possibilities-parallax--two">
+                                <img src="assets/images/possibilitiesParallax2.png" alt="">
+                            </div>
+                            <div class="possibilities-parallax-image possibilities-parallax--tree">
+                                <img src="assets/images/possibilitiesParallax3.png" alt="">
+                            </div>
+                        </div>
+
+                        <div data-id="synonymizer" style="background-image: url('assets/images/possibilitiesCnt3.png')"
+                             class="possibilities-cnt G-align-center">
+                            <div class="synonymizer-info possibilities-info-item">
+                                <h3 class="possibilities-item-title">Рерайт текста</h3>
+                                <p class="possibilities-item-sub">
+                                    Рерайт текста — обнови смыслы, добавь свежие формулировки. Нейросеть, которая
+                                    переписывает текст, проверяет ошибки и добавляет новизны.
+                                </p>
+
+                                <div class="for-whom-block">
+                                    <h4 class="for-whom-title">Для кого:</h4>
+                                    <p class="for-whom-text">
+                                        Творческие люди | Маркетологи | Бизнесмены
+                                    </p>
+                                </div>
+
+                                <div class="possibilities-btn-cnt ">
+                                    <button class="possibilities-btn btn-gradient G-align-center">
+                                        <span>Перейти</span>
+                                        <i class="icon icon-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div data-id="rewrite" style="background-image: url('assets/images/possibilitiesCnt2.png')"
+                             class="possibilities-cnt G-align-center">
+                            <div class="possibilities-info-item">
+                                <h3 class="possibilities-item-title">Генератор стихов и рифм</h3>
+                                <p class="possibilities-item-sub">
+                                    Почувствуй себя великим поэтом.
+                                    <span class="text-wrap">Нейросеть, которая поможет написать стих</span>
+                                    или подобрать рифму.
+                                </p>
+
+                                <div class="for-whom-block">
+                                    <h4 class="for-whom-title">Для кого:</h4>
+                                    <p class="for-whom-text">
+                                        Творческие люди | Маркетологи | Бизнесмены | Копирайтеры
+                                    </p>
+                                </div>
+
+                                <div class="possibilities-btn-cnt ">
+                                    <button class="possibilities-btn btn-gradient G-align-center">
+                                        <span>Перейти</span>
+                                        <i class="icon icon-arrow-left"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="possibilities-slider-box block-cnt">
+
+                        <div class="possibilities-slider swiper  ">
+                            <div class=" swiper-wrapper">
+
+                                <div class="swiper-slide">
+
+                                    <div style="background-image: url('assets/images/possibilitiesSlideFon.png')"
+                                         class="possibilities-slide-item G-image G-column-center">
+                                        <div class="possibilities-slide-texts">
+                                            <h3 class="possibilities-slide-title"> Генератор презентаций </h3>
+                                            <p class="possibilities-slide-text">Создание стильных презентаций.
+                                                Нужна презентация на учёбу или работу? Сделай её в пару кликов</p>
+
+                                            <div class="possibilities-btn-cnt">
+                                                <button class="possibilities-btn btn-gradient G-align-center">
+                                                    <span>Перейти</span>
+                                                    <i class="icon icon-arrow-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="swiper-slide">
+
+                                    <div style="background-image: url('assets/images/possibilitiesSlideFon2.png')"
+                                         class="possibilities-slide-item G-image G-column-center">
+
+                                        <div class="possibilities-slide-texts">
+                                            <h3 class="possibilities-slide-title"> Синонимайзер</h3>
+                                            <p class="possibilities-slide-text">
+                                                Если вы хотите добиться 100% уникальности от текста, чтобы
+                                                он привлекал не только вас,
+                                                но и постоянных читателей, вам следует обратиться за помощью
+                                                к синонимайзеру.
+                                            </p>
+
+                                            <div class="possibilities-btn-cnt">
+                                                <button class="possibilities-btn btn-gradient G-align-center">
+                                                    <span>Перейти</span>
+                                                    <i class="icon icon-arrow-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="swiper-slide">
+
+                                    <div style="background-image: url('assets/images/possibilitiesSlideFon3.png')"
+                                         class="possibilities-slide-item G-image G-column-center">
+                                        <div class="possibilities-slide-texts">
+                                            <h3 class="possibilities-slide-title"> Рерайт текста</h3>
+                                            <p class="possibilities-slide-text">
+                                                Рерайт текста — обнови смыслы, добавь свежие формулировки. Нейросеть,
+                                                которая переписывает текст, проверяет ошибки и добавляет новизны.
+                                            </p>
+
+                                            <div class="possibilities-btn-cnt">
+                                                <button class="possibilities-btn btn-gradient G-align-center">
+                                                    <span>Перейти</span>
+                                                    <i class="icon icon-arrow-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="possibilities-pagination swiper-pagination"></div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="industry-section section">
+            <div class="container">
+                <div class="industry-body">
+                    <div class="industry-block-titles  G-column-center">
+                        <h2 class="top-title gradient-text">Для любой отрасли</h2>
+                        <h3 class="effective-bottom-title block-title">
+                            От студентов
+                            <span class="mobile-text-wrap">до бизнесменов —</span>
+                            <span class="text-wrap">нейросеть для всех</span>
+                        </h3>
+                        <div class="industry-stars">
+                            <img src="assets/images/stars.png" alt="">
+                        </div>
+                    </div>
+                    <div class="industry-swiper swiper  ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="industry-item industry-item--one G-column-center ">
+                                    <div class="industry-item-picture industry-small-picture">
+                                        <img src="assets/images/industry1.png" alt="">
+                                    </div>
+                                    <div class="industry-item-clue G-align-center">
+                                        <i class="icon icon-industry"></i>
+                                        <p class="industry-item-text">Творческие люди</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="industry-item industry-item--two G-column-center ">
+                                    <div class="industry-item-picture industry-big-picture">
+                                        <img src="assets/images/industry2.png" alt="">
+                                    </div>
+                                    <div class="industry-item-clue G-align-center">
+                                        <i class="icon icon-industry"></i>
+                                        <p class="industry-item-text">Копирайтеры</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="industry-item industry-item--tree G-column-center ">
+                                    <div class="industry-item-picture industry-average-picture">
+                                        <img src="assets/images/industry3.png" alt="">
+                                    </div>
+                                    <div class="industry-item-clue G-align-center">
+                                        <i class="icon icon-industry"></i>
+                                        <p class="industry-item-text">Маркетологи</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="industry-item industry-item-profession G-column-center ">
+                                    <div class="industry-item-label ">
+                                        <label>
+                                            <input type="file">
+                                        </label>
+                                        <div class="add-profession-img">
+                                            <img src="assets/images/add.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="industry-item-clue G-align-center">
+                                        <i class="icon icon-industry"></i>
+                                        <p class="industry-item-text">Ваша профессия</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="industry-pagination swiper-pagination"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="industry-parallax-img industry-parallax--one">
+                <img src="assets/images/industryParallax.png" alt="">
+            </div>
+            <div class="industry-parallax-img industry-parallax--two">
+                <img src="assets/images/industryParallax2.png" alt="">
+            </div>
+            <div class="industry-parallax-img industry-parallax--tree">
+                <img src="assets/images/industryParallax3.png" alt="">
+            </div>
+            <div class="industry-parallax-img industry-parallax--blur">
+                <img src="assets/images/blur7.png" alt="">
+            </div>
+            <div class="industry-parallax-img industry-parallax--prism">
+                <img src="assets/images/prism.png" alt="">
+            </div>
+            <div class="industry-parallax-img industry-parallax--blur2">
+                <img src="assets/images/blur8.png" alt="">
+            </div>
+
+        </section>
+
+
+        <section id="reviews" class="reviews-section section">
+            <div class="container">
+                <div class="reviews-body">
+                    <div class="reviews-block-titles  G-column-center">
+                        <h2 class="top-title gradient-text">Отзывы</h2>
+                        <h3 class="block-title">
+                            Миллионы
+                            <span class="mobile-text-wrap">пользователей</span>
+                            <span class="text-wrap">выбирают Satellite AI</span>
+                        </h3>
+                    </div>
+
+                    <div class="reviews-slider-arrows G-center blo">
+                        <div class="reviews-slider-prev swiper-button-prev">
+                            <img src="assets/images/arrowLeft.svg" alt="">
+                        </div>
+                        <div class="reviews-slider-next swiper-button-next">
+                            <img src="assets/images/arrowRight.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="reviews-swiper swiper  ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews-texts-item">
+                                    <div class="reviews-text-header G-justify-between">
+                                        <i class="icon icon-reviews"></i>
+                                        <p class="reviews-data">02 сентября</p>
+                                    </div>
+                                    <div class="reviews-info">
+                                        <h3 class="reviews-author">Ирина Северина</h3>
+                                        <p class="reviews-text">Функция рерайта просто спасает! Нейросеть умело
+                                            обновляет тексты, сохраняя их смысл,
+                                            но делая их уникальными
+                                            и свежими.
+                                            Очень удобно для работы
+                                            с контентом!</p>
+                                    </div>
+
+                                    <div class="reviews-author-info G-align-center">
+                                        <div class="reviews-author-img G-flex">
+                                            <img src="assets/images/reviews1.jpg" alt="">
+                                        </div>
+                                        <p class="reviews-author-profession">Графический дизайнер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="background-image: url('assets/images/reviews2.png')"
+                                     class="reviews-img-item G-image">
+
+                                    <div class="reviews-author-descr">
+                                        <h3 class="reviews-author">Дмитрий Невзоров</h3>
+                                        <p>Предприниматель</p>
+                                    </div>
+                                    <div class="reviews-sub-info">
+                                        <div class="reviews-text-header G-justify-between">
+                                            <i class="icon icon-reviews"></i>
+                                            <p class="reviews-data">27 октября</p>
+                                        </div>
+                                        <div class="reviews-info">
+                                            <h3 class="reviews-author">Дмитрий Невзоров</h3>
+                                            <p class="reviews-text">
+                                                Как преподаватель, я часто сталкиваюсь с необходимостью обновлять
+                                                материалы. Рерайт текста в этой нейросети просто шикарный! Помогает
+                                                сделать старые тексты уникальными
+                                                и свежими.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews-texts-item">
+                                    <div class="reviews-text-header G-justify-between">
+                                        <i class="icon icon-reviews"></i>
+                                        <p class="reviews-data">23 сентября</p>
+                                    </div>
+                                    <div class="reviews-info">
+                                        <h3 class="reviews-author">Станислав Романовский</h3>
+                                        <p class="reviews-text">
+                                            Создание презентаций стало для меня настоящим облегчением. Нейросеть делает
+                                            все за меня — только введи идеи, и вот она, готовая презентация!
+                                            Очень удобно для бизнеса.
+                                        </p>
+                                    </div>
+
+                                    <div class="reviews-author-info G-align-center">
+                                        <div class="reviews-author-img G-flex">
+                                            <img src="assets/images/reviews3.jpg" alt="">
+                                        </div>
+                                        <p class="reviews-author-profession">Графический дизайнер</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div style="background-image: url('assets/images/reviews4.jpg')"
+                                     class="reviews-img-item G-image">
+
+                                    <div class="reviews-author-descr">
+                                        <h3 class="reviews-author">Екатерина Зорина</h3>
+                                        <p>Маркетолог</p>
+                                    </div>
+                                    <div class="reviews-sub-info">
+                                        <div class="reviews-text-header G-justify-between">
+                                            <i class="icon icon-reviews"></i>
+                                            <p class="reviews-data">3 мая</p>
+                                        </div>
+                                        <div class="reviews-info">
+                                            <h3 class="reviews-author">Екатерина Зорина</h3>
+                                            <p class="reviews-text">
+                                                Мне понравилось, как нейросеть подбирает рифмы! Даже самые простые идеи
+                                                превращаются
+                                                в красивые строки.
+                                                Теперь вдохновение приходит гораздо чаще!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews-texts-item">
+                                    <div class="reviews-text-header G-justify-between">
+                                        <i class="icon icon-reviews"></i>
+                                        <p class="reviews-data">07 января</p>
+                                    </div>
+                                    <div class="reviews-info">
+                                        <h3 class="reviews-author">Алексей Цветков</h3>
+                                        <p class="reviews-text">
+                                            Создание презентаций больше не вызывает стресса. Всего несколько минут — и у
+                                            меня готовые слайды для работы. Отличный инструмент для тех, кто ценит своё
+                                            время!
+                                        </p>
+                                    </div>
+
+                                    <div class="reviews-author-info G-align-center">
+                                        <div class="reviews-author-img G-flex">
+                                            <img src="assets/images/reviews5.png" alt="">
+                                        </div>
+                                        <p class="reviews-author-profession">Предприниматель</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div style="background-image: url('assets/images/reviews6.png')"
+                                     class="reviews-img-item G-image">
+
+                                    <div class="reviews-author-descr">
+                                        <h3 class="reviews-author">Анна Петровская</h3>
+                                        <p>Креатор</p>
+                                    </div>
+                                    <div class="reviews-sub-info">
+                                        <div class="reviews-text-header G-justify-between">
+                                            <i class="icon icon-reviews"></i>
+                                            <p class="reviews-data">14 августа</p>
+                                        </div>
+                                        <div class="reviews-info">
+                                            <h3 class="reviews-author">Анна Петровская</h3>
+                                            <p class="reviews-text">
+                                                Эта нейросеть просто находка! Генератор стихов вдохновил меня на
+                                                создание нескольких красивых строк, которые я теперь использую в своих
+                                                проектах. Рекомендую всем творческим людям!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews-texts-item">
+                                    <div class="reviews-text-header G-justify-between">
+                                        <i class="icon icon-reviews"></i>
+                                        <p class="reviews-data">12 мая</p>
+                                    </div>
+                                    <div class="reviews-info">
+                                        <h3 class="reviews-author">Мария Гаврилова</h3>
+                                        <p class="reviews-text">
+                                            Синонимайзер изменил мой подход к написанию текстов.
+                                            Я теперь легко добавляю разнообразие в свои статьи,
+                                            что делает их более интересными для читателей. Очень полезный инструмент!
+                                        </p>
+                                    </div>
+
+                                    <div class="reviews-author-info G-align-center">
+                                        <div class="reviews-author-img G-flex">
+                                            <img src="assets/images/reviews7.jpg" alt="">
+                                        </div>
+                                        <p class="reviews-author-profession">Блогер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div style="background-image: url('assets/images/reviews8.png')"
+                                     class="reviews-img-item G-image">
+
+                                    <div class="reviews-author-descr">
+                                        <h3 class="reviews-author">Ольга Всеволодова</h3>
+                                        <p>Поэт</p>
+                                    </div>
+                                    <div class="reviews-sub-info">
+                                        <div class="reviews-text-header G-justify-between">
+                                            <i class="icon icon-reviews"></i>
+                                            <p class="reviews-data">17 апреля</p>
+                                        </div>
+                                        <div class="reviews-info">
+                                            <h3 class="reviews-author">Ольга Всеволодова</h3>
+                                            <p class="reviews-text">
+                                                Я просто в восторге
+                                                от генератора рифм!
+                                                Это именно то, что мне нужно,
+                                                чтобы поэтическое вдохновение не покидало меня. Каждый раз получаю
+                                                удивительные варианты!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--                        <div class="reviews-pagination swiper-pagination"></div>-->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="faq" class="faq-section section">
+            <div class="container">
+                <div class="faq-body">
+                    <div class="faq-block-titles  G-column-center">
+                        <h2 class="top-title gradient-text">FAQ</h2>
+                        <h3 class="block-title">
+                            Вы спрашиваете -
+                            <span class="mobile-text-wrap">мы отвечаем</span>
+                        </h3>
+                    </div>
+
+                    <div class="faq-cnt G-flex-column">
+                        <div class="faq-item G-align-start">
+                            <div class="faq-item-cnt">
+                                <div class="faq-item-titles G-align-center">
+                                    <span class="faq-item-number">01</span>
+                                    <h3 class="faq-item-title">Сколько времени занимает создание презентации?</h3>
+                                    <div class="faq-icon-mobile faq-item-icon ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="faq-item-sub">
+                                    Наша нейросеть поддерживает более 200 языков и акцентов, включая русский,
+                                    английский, испанский, французский и многие другие. Система также адаптирована для
+                                    различных региональных акцентов, что делает её универсальной для пользователей по
+                                    всему миру.
+                                </div>
+                            </div>
+                            <div class="faq-icon-desktop faq-item-icon ">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="faq-item G-align-start">
+                            <div class="faq-item-cnt">
+                                <div class="faq-item-titles G-align-center">
+                                    <span class="faq-item-number">02</span>
+                                    <h3 class="faq-item-title">Что такое синонимайзер и как он может помочь?</h3>
+
+                                    <div class="faq-icon-mobile faq-item-icon ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="faq-item-sub">
+                                    Синонимайзер заменяет слова в вашем тексте на подходящие синонимы, помогая сделать
+                                    текст более
+                                    разнообразным и интересным. Это особенно полезно для избежания повторов.
+                                </div>
+                            </div>
+                            <div class="faq-icon-desktop faq-item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+
+
+                        <div class="faq-item G-align-start">
+                            <div class="faq-item-cnt">
+                                <div class="faq-item-titles G-align-center">
+                                    <span class="faq-item-number">03</span>
+                                    <h3 class="faq-item-title">Могу ли я редактировать текст после его генерации?</h3>
+                                    <div class="faq-icon-mobile faq-item-icon ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="faq-item-sub">
+                                    Конечно! После генерации вы можете редактировать текст по своему усмотрению,
+                                    добавлять собственные
+                                    <span class="desktop-text-wrap">идеи или изменять структуру.</span>
+                                </div>
+                            </div>
+                            <div class="faq-icon-desktop faq-item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+
+
+                        <div class="faq-item G-align-start">
+                            <div class="faq-item-cnt">
+                                <div class="faq-item-titles G-align-center">
+                                    <span class="faq-item-number">04</span>
+                                    <h3 class="faq-item-title">Как нейросеть справляется с рерайтом текста?</h3>
+                                    <div class="faq-icon-mobile faq-item-icon ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="faq-item-sub">
+                                    Нейросеть анализирует оригинальный текст и создает его уникальную версию, сохраняя
+                                    смысл, но меняя формулировки и стиль.
+                                    Это помогает избежать плагиата и улучшить оригинальность контента.
+                                </div>
+                            </div>
+                            <div class="faq-icon-desktop faq-item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="faq-item G-align-start">
+                            <div class="faq-item-cnt">
+                                <div class="faq-item-titles G-align-center">
+                                    <span class="faq-item-number">05</span>
+                                    <h3 class="faq-item-title">Могу ли я использовать созданные стихи для коммерческих
+                                        целей?</h3>
+                                    <div class="faq-icon-mobile faq-item-icon ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="faq-item-sub">
+                                    Да, вы можете использовать созданные стихи для личных и коммерческих проектов.
+                                    Все сгенерированные материалы принадлежат вам!
+                                </div>
+                            </div>
+                            <div class="faq-icon-desktop faq-item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="faq-item G-align-start">
+                            <div class="faq-item-cnt">
+                                <div class="faq-item-titles G-align-center">
+                                    <span class="faq-item-number">06</span>
+                                    <h3 class="faq-item-title">Как работает генератор стихов?</h3>
+                                    <div class="faq-icon-mobile faq-item-icon ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="faq-item-sub">
+                                    Генератор стихов принимает ваши идеи или ключевые слова и использует алгоритмы,
+                                    чтобы создать уникальные
+                                    стихотворные строки. Просто введите тему, и он предложит готовое стихотворение!
+                                </div>
+                            </div>
+                            <div class="faq-icon-desktop faq-item-icon">
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="first-verse-section">
+            <div class="container">
+                <div class="first-verse-titles G-column-center ">
+                    <h2 class="top-title gradient-text">Генератор стихов и рифм</h2>
+
+                    <div class="first-verse-title">
+                        <span class="block-title"> Создайте свой
+                            <span class="mobile-text-wrap">первый стих <span class="text-mobile-block">уже</span></span>
+                        </span>
+                        <div class="first-verse-logo G-center">
+                            <span class="block-title desktop-text-wrap"><span class="text-mobile-none">уже</span> <span
+                                    class="mobile-text-wrap">сейчас с Satellite AI</span></span>
+                            <div class="G-flex">
+                                <img src="assets/images/smallLogo.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="first-verse-btn G-center">
+                        <button class="btn-gradient">Попробовать</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="verse-parallax verse-parallax--one">
+                <img src="assets/images/verseParallax1.png" alt="">
+            </div>
+            <div class="verse-parallax verse-parallax--two">
+                <img src="assets/images/verseParallax2.png" alt="">
+            </div>
+
+            <div class="verse-parallax verse-parallax--for">
+                <img src="assets/images/verseParallax4.png" alt="">
+
+            </div>
+            <div class="verse-parallax  verse-parallax--tree">
+                <img src="assets/images/verseParallax3.png" alt="">
+
+            </div>
+
+            <div class="verse-parallax  verse-parallax--blur">
+                <img src="assets/images/blur10.png" alt="">
+            </div>
+            <div class="verse-parallax  verse-parallax--star">
+                <img src="assets/images/star2.png" alt="">
+            </div>
+
+            <div class="verse-parallax  verse-parallax--blur2">
+                <img src="assets/images/blur11.png" alt="">
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body G-justify-between">
+                <a class="footer-logo" href="poetryGenerator.html">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <nav class="footer-menu">
+                    <ul class="footer-menu-list G-flex">
+                        <li>
+                            <a href="#possibilities">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#forWhom">Для кого</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn-white footer-btn">Регистрация</button>
+
+            </div>
+            <div class="footer-clue ">
+                <span>© 2024 Satellite AI.</span>
+                <span> Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script src="assets/js/gsap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/swiper.js"></script>
+
+</body>
+</html>
