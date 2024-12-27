@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function activateTab(tab) {
         const targetId = tab.getAttribute("data-id");
 
-        // Удаляем активный класс у всех вкладок и контента
         tabs.forEach(t => t.classList.remove("active"));
         contents.forEach(c => c.classList.remove("active"));
 
