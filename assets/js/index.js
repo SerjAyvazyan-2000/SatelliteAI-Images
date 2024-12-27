@@ -126,17 +126,14 @@ document.addEventListener("DOMContentLoaded", () => {
         tabs.forEach(t => t.classList.remove("active"));
         contents.forEach(c => c.classList.remove("active"));
 
-        // Добавляем активный класс для выбранной вкладки и контента
         tab.classList.add("active");
         document.querySelector(`.possibilities-cnt[data-id="${targetId}"]`).classList.add("active");
     }
 
-    // Назначаем обработчики событий для всех вкладок
     tabs.forEach(tab => {
         tab.addEventListener("click", () => activateTab(tab));
     });
 
-    // Изначально активировать первый элемент
     activateTab(tabs[0]);
 });
 
