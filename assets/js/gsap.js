@@ -26,7 +26,6 @@ gsap.to(".industry-parallax-img ", {
 });
 
 
-// Анимация элемента
 gsap.to(".verse-parallax--one", {
     x: -250,
     scrollTrigger: {
@@ -34,7 +33,6 @@ gsap.to(".verse-parallax--one", {
         start: "top top",
         end: "bottom top",
         scrub: true,
-        // markers: true, // Включены маркеры для проверки
     },
 });
 gsap.to(".verse-parallax--two", {
